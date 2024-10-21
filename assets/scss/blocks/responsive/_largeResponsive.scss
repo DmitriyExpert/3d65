@@ -1,0 +1,52 @@
+// Large size responsive
+
+
+@media (max-width: $large-size) {
+
+      // Header
+
+      .header__menuwrapper {
+            column-gap: 70px;
+      }
+
+      .menu__item {
+            font-size: 15px;
+      }
+
+      .header__number {
+            font-size: 19px;
+      }
+
+      .header__social--link {
+            max-width: 28px;
+      }
+
+      // Intro
+
+      .section__intro {
+            padding: 100px 0px;
+      }
+
+      .intro__row {
+            flex-direction: column;
+            row-gap: 40px;
+            align-items: start;
+      }
+
+      @media (max-width: 900px) {
+
+            // Header
+            .header__wrapper {
+                  align-items: flex-start;
+            }
+
+
+            .header__menuwrapper {
+                  flex-direction: column;
+                  align-items: start;
+                  row-gap: 20px;
+            }
+      }
+
+
+}

@@ -1,0 +1,48 @@
+
+@media (max-width: $tablet-size) {
+      // header
+
+      .header__menuwrapper {
+            max-width: 100%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            row-gap: 0px;
+            justify-content: space-between;
+      }
+
+      .header__nav {
+            display: none;
+      }
+
+      .header__contactblock {
+            display: none;
+      }
+
+      .burgeraction {
+            display: flex;
+      }
+
+
+      // Intro
+
+      .intro__row {
+            align-items: center;
+
+      }
+
+      .intro__titlebox {
+            row-gap: 50px;
+      }
+
+      .intro__title {
+            font-size: 42px;
+            line-height: 48px;
+      }
+
+      .intro__subtitles {
+            row-gap: 15px;
+      }
+}

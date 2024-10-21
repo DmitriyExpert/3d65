@@ -3,7 +3,7 @@
 
 .header {
       background-color: $black-color;
-      padding: 5px 0px;
+      padding: 10px 0px;
 }
 
 .header__wrapper {
@@ -76,6 +76,8 @@
       display: flex;
       align-items: center;
       column-gap: 30px;
+
+      border-left: 2px solid $white-color;
 }
 
 .header__social--link {

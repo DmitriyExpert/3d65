@@ -1,0 +1,64 @@
+@media (max-width: $mobile-size) {
+      // Intro
+
+      .section__intro {
+            padding: 60px 0px;
+      }
+
+      .intro__title  {
+            font-size: 21px;
+            line-height: 28px;
+      }
+
+      .intro__subtitle {
+            font-size: 16px;
+            line-height: 25px;
+      }
+
+      .intro__subtitles {
+            row-gap: 0px;
+      }
+
+      .intro__titlebox {
+            row-gap: 30px;
+      }
+
+      .intro__title::after {
+            bottom: -15px;
+            max-width: 60px;
+      }
+
+      .intro__textbox {
+            row-gap: 28px;
+      }
+
+      .intro__textbox--btn {
+            padding: 10px 0px;
+            max-width: 175px;
+            font-size: 14px;
+      }
+
+      .intro__formwrapper {
+            row-gap: 25px;
+            padding: 20px 20px;
+      }
+      
+
+      .intro__formwrapper--text {
+            row-gap: 0px;
+      }
+
+      .intro__formwrapper--title {
+            font-size: 22px;
+      }
+
+      .intro__form--input {
+            padding: 10px 15px;
+            font-size: 14px;
+      }
+
+      .intro__form--btn {
+            padding: 10px 0px;
+            font-size: 14px;
+      }
+}

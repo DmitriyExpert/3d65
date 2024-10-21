@@ -1,0 +1,56 @@
+
+// laptop Responsive
+
+@media (max-width: $laptop-size) {
+     
+      // Header
+
+      .header__menuwrapper {
+            column-gap: 50px;
+      }
+
+      .header__contactblock {
+            column-gap: 25px;
+      }
+
+      .header__social {
+            padding: 0px 0px 0px 30px;
+      }
+
+      // Intro
+
+      .intro__title {
+            font-size: 45px;
+            line-height: 50px;
+      }
+
+      .intro__subtitles {
+            row-gap: 24px;
+      }
+
+      .intro__subtitle  {
+            font-size: 23px;
+      }
+
+      .intro__textbox {
+            row-gap: 40px;
+      }
+
+      .intro__formwrapper {
+            padding: 25px 30px;
+            row-gap: 42px;
+      }
+
+      .intro__formwrapper--title {
+            font-size: 32px;
+      }
+
+      .intro__formwrapper--subtitle {
+            font-size: 15px;
+      }
+
+      .intro__form--input {
+            padding: 18px 28px;
+      }
+
+}

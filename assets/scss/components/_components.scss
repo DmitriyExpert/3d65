@@ -1,0 +1,19 @@
+
+
+// burger menu action
+
+.burgeraction {
+      display: flex;
+      flex-direction: column;
+      max-width: 40px;
+      width: 100%;
+      row-gap: 10px;
+      display: none;
+
+      & span {
+            height: 3px;
+            max-width: 100%;
+            width: 100%;
+            background-color: $white-color;
+      }
+}

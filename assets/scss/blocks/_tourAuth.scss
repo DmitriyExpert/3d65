@@ -1,0 +1,72 @@
+
+
+// header
+
+
+.header--white {
+      background-color: $white-color;
+}
+
+
+// Admin panel
+
+.section__admin {
+      padding: 68px 0px 0px 0px;
+      color: #333333;
+}
+
+.admin__wrapper{
+      max-width: 100%;
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+
+}
+
+.admin__wrapper--center {
+      justify-content: center;
+}
+
+.admin__column {
+      flex: 1 1 0;
+}
+
+.admin__authblock {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+}
+
+.admin__authtitle {
+      font-size: 43px;
+}
+
+.admin__form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+}
+
+.admin__inputauth {
+      padding: 10px 10px 10px 10px;
+      border: 2px solid #333333;
+      border-radius: 50px;
+}
+
+.admin__btnauth {
+      max-width: 100px;
+      border: 2px solid #333;
+      border-radius: 50px;
+      color: $white-color;
+      padding: 12px 20px;
+      font-weight: 700;
+      background-color: #333333;
+
+      transition: all .3s ease;
+      &:hover {
+            background-color: #fff;
+            color: #333;
+      }
+}
+

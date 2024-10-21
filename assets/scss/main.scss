@@ -1,14 +1,26 @@
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 // base
 
-@import '../scss/base/fonts';
+
 @import '../scss/base/var';
 @import '../scss/base/mixin';
 @import '../scss/base/reset';
+@import '../scss/base/base';
 
 // blocks
 
 @import '../scss/blocks/header';
+@import '../scss/blocks/tourAuth';
+@import '../scss/blocks/intro';
+
+// components
+
+@import '../scss/components/components';
+
+// responsive
+@import '../scss/blocks/_responsive.scss';
+
+
+// Admin Auth
+
