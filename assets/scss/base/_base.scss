@@ -3,10 +3,38 @@
 
 // Container
 
+// section
 
+.section {
+      padding: 114px 0px;
+}
 
 // section__title
 
+
+.section__titlewrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 0px 0px 82px;
+}
+
+.section__subtitle {
+      color: $accent-color;
+      font-weight: $fw-700;
+      line-height: 26px;
+      font-size: 21px;
+}
+
+.section__titleline {
+      position: absolute;
+      height: 3px;
+      background-color: $second-color;
+      width: 60px;
+      z-index: 10000;
+      left: 0;
+      top: 31px;
+}
 
 
 // Other classess
@@ -15,4 +43,20 @@
 
 .dn {
       display: none !important;
+}
+
+.marg-center {
+      margin: 0 auto;
+}
+
+.marg-right {
+      margin: 0 0 0 auto;
+}
+
+.text-ac {
+      text-align: center;
+}
+
+.text-ar {
+      text-align: right;
 }

@@ -1,4 +1,41 @@
 @media (max-width: $mobile-size) {
+
+      // section
+
+      .section {
+            padding: 70px 0px;
+      }
+      
+
+      // section title 
+
+      .section__titlewrapper {
+            padding: 0px;
+            text-align: center;
+            row-gap: 30px;
+      }
+
+      .section__titleline {
+            display: none;
+      }
+
+      .section__title {
+            font-size: 29px;
+            position: relative;
+            &::after {
+                  content: "";
+                  position: absolute;
+                  display: block;
+                  max-width: 60px;
+                  width: 100%;
+                  height: 3px;
+                  background-color: $second-color;
+                  bottom: -10px;
+                  left: 50%;
+                  transform: translate(-50%);
+            }
+      }
+
       // Intro
 
       .section__intro {
@@ -61,4 +98,6 @@
             padding: 10px 0px;
             font-size: 14px;
       }
+
+
 }

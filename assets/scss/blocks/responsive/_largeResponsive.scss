@@ -3,6 +3,23 @@
 
 @media (max-width: $large-size) {
 
+      // section
+
+      .section {
+            padding: 90px 0px;
+      }
+
+      //sectio title
+
+      .section__title  {
+            font-size: 32px;
+            line-height: 40px;
+      }
+
+      .section__subtitle {
+            font-size: 16px;
+      }
+
       // Header
 
       .header__menuwrapper {
@@ -33,6 +50,12 @@
             align-items: start;
       }
 
+      // viewtour
+
+      .view__card--title {
+            font-size: 16px;
+      }
+
       @media (max-width: 900px) {
 
             // Header
@@ -46,6 +69,24 @@
                   align-items: start;
                   row-gap: 20px;
             }
+
+            // viewtour 
+
+            .viewtour__cards {
+                  flex-wrap: wrap;
+                  row-gap: 50px;
+                  justify-content: center;
+            }
+
+            .view__card--textblock {
+                  text-align: center;
+            }
+
+            .view__card--imgblock {
+                  margin: 0 auto;
+            }
+
+            
       }
 
 

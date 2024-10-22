@@ -2,6 +2,19 @@
 // laptop Responsive
 
 @media (max-width: $laptop-size) {
+
+      // section
+
+      //section title 
+
+      .section__title {
+            font-size: 40px;
+      }
+
+      .section__subtitle {
+            font-size: 18px;
+      }
+      
      
       // Header
 
@@ -51,6 +64,30 @@
 
       .intro__form--input {
             padding: 18px 28px;
+      }
+
+      // viewtour {
+      .viewtour__wrapper {
+            row-gap: 60px;
+      }
+
+      .view__card--title {
+            font-size: 18px;
+      }
+
+      .view__card--subtitle {
+            
+            font-size: 14px;
+            line-height: 26px;
+      }
+
+      .view__card {
+            max-width: 300px;
+            row-gap: 20px;
+      }
+
+      .view__card--textblock {
+            row-gap: 7px;
       }
 
 }

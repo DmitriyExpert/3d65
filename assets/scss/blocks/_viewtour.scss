@@ -1,0 +1,71 @@
+
+// Viewtour
+
+.viewtour__wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 80px;
+      max-width: 100%;
+      width: 100%;
+      color: $black-color;
+      & .section__titlewrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            
+            & .section__title {
+                  max-width: 519px;
+                  color: $second-color;
+            }
+
+
+      }
+}
+
+.viewtour__content {
+      max-width: 100%;
+      width: 100%;
+}
+
+.viewtour__cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 20px;
+}
+
+.view__card {
+      display: flex;
+      flex-direction: column;
+      row-gap: 28px;
+      max-width: 397px;
+      width: 100%;
+}
+
+
+.view__card--img {
+      cursor: pointer;
+      transition: all .3s ease;
+      &:hover {
+            scale: 1.1;
+      }
+}
+
+.view__card--textblock {
+      display: flex;
+      flex-direction: column;
+      row-gap: 13px;
+}
+
+.view__card--title {
+      font-size: 24px;
+      color: $second-color;
+      line-height: 40px;
+}
+
+.view__card--subtitle{
+      font-weight: $fw-600;
+      line-height: 36px;
+      font-size: 18px;
+      color: $grey-color;
+}
