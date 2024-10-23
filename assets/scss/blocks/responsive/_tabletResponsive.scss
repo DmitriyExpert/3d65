@@ -45,4 +45,39 @@
       .intro__subtitles {
             row-gap: 15px;
       }
+
+      // portfolio
+
+      .portfolio__content {
+            row-gap: 40px;
+      }
+
+      .portfolio__slidebody {
+            max-width: 290px;
+      }
+
+      .portfolio__slide--textblock {
+            row-gap: 15px;
+            padding: 20px;
+      }
+
+      .portfolio__slide--playaction img {
+            max-width: 80px;
+            
+      }
+
+      .portfolio__slide--title {
+            line-height: 24px;
+            font-size: 22px;
+      }
+
+      .portfolio__slide--subtitle {
+            font-size: 14px;
+            line-height: 26px;
+      }
+
+      .slide--panaramshowbtn {
+            font-size: 14px;
+            max-width: 150px;
+      }
 }

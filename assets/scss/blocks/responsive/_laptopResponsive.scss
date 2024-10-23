@@ -90,4 +90,30 @@
             row-gap: 7px;
       }
 
+      // portfolio
+
+      .portfolio__content {
+            row-gap: 40px;
+      }
+
+      .portfolio__slidebody {
+            max-width: 460px;
+      }
+
+      .portfolio__slide--textblock {
+            row-gap: 18px;
+      }
+
+      .portfolio__slide--title {
+            font-size: 36px;
+      }
+
+      .portfolio__slide--subtitle {
+            font-size: 16px;
+      }
+
+      .slide--panaramshowbtn {
+            font-size: 16px;
+            max-width: 150px;
+      }
 }

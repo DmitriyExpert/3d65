@@ -99,5 +99,22 @@
             font-size: 14px;
       }
 
+      // portfolio
+
+      .portfolio__wrapper .section__titlewrapper {
+            display: flex;
+            flex-direction: column;
+      }
+
+      .portfolio__wrapper {
+            row-gap: 40px;
+      }
+
+      .portfolio__moreworks {
+            max-width: 150px;
+            font-size: 14px;
+            padding: 10px;
+      }
+
 
 }

@@ -25,7 +25,7 @@
 .intro__row {
       display: flex;
       column-gap: 30px;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
 }
 
@@ -35,13 +35,14 @@
       display: flex;
       flex-direction: column;
       row-gap: 58px;
-      max-width: 901px;
+      max-width: 1203px;
       width: 100%;
 }
 
 .intro__titlebox {
       display: flex;
       flex-direction: column;
+      text-align: center;
       row-gap: 60px;
 }
 
@@ -58,6 +59,8 @@
             max-width: 154px;
             width: 100%;
             bottom: -27px;
+            left: 50%;
+            transform: translateX(-50%);
       }
 }
 
@@ -65,8 +68,8 @@
       display: flex;
       flex-direction: column;
       row-gap: 49px;
-
-
+      text-align: center;
+      margin: 0 auto;
 }
 
 .intro__subtitle {
@@ -83,7 +86,8 @@
 }
 
 .intro__textbox--btn {
-      max-width: 207px;
+      max-width: 100%;
+      width: 207px;
       padding: 18px 0px;
       border: solid 3px $white-color;
       border-radius: 50px;
@@ -91,92 +95,11 @@
       font-weight: $fw-700;
       font-size: 18px;
       transition: all .3s ease;
-      &:hover {
-            border-color: $second-color;
-            background-color: $second-color;
-      }
-}
-
-// Intro form
-
-.intro__formwrapper {
-      background-color: $white-color;
-      padding: 45px 35px;
-      border-radius: 31px;
-      display: flex;
-      flex-direction: column;
-      row-gap: 62px;
-
-      max-width: 579px;
-      width: 100%;
-}
-
-.intro__formwrapper--text {
-      display: flex;
-      flex-direction: column;
-      row-gap: 11px;
-}
-
-.intro__formwrapper--title {
-      font-weight: $fw-700;
-      font-size: 36px;
-      color: $black-color;
-}
-
-.intro__formwrapper--subtitle {
-      max-width: 310px;
-      font-size: 16px;
-      color: $black-color;
-}
-
-.intro__formblock {
-      display: flex;
-      flex-direction: column;
-      row-gap: 38px;
-}
-
-.intro__form {
-      max-width: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      row-gap: 32px;
-}
-
-.intro__form--input {
-      max-width: 100%;
-      width: 100%;
-
-      padding: 23px 32px;
-      border: solid 2px #39A352;
-      border-radius: 50px;
-
-      color: $grey-color;
-      font-size: 16px;
+      margin: 0 auto;
       
-}
-
-.intro__form--btn {
-      color: $black-color;
-      max-width: 159px;
-      padding: 15px 0px;
-      border: solid 2px $black-color;
-      font-weight: $fw-700;
-      font-size: 16px;
-      border-radius: 50px;
-      transition: all .3s ease;
       &:hover {
             border-color: $second-color;
             background-color: $second-color;
-            color: $white-color;
       }
 }
 
-.intro__form--note {
-      color: $note-color;
-      font-weight: $fw-600;
-      max-width: 418px;
-      & span {
-            color: $second-color;
-      }
-}
