@@ -1,0 +1,156 @@
+// create--cardswitcherdisplay
+
+.create--cardswitcherdisplay {
+      display: none;
+}
+
+
+
+
+.section__create {
+      background-color: $grey-color;
+}
+
+.create__wrapper {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 86px;
+      & .section__titlewrapper {
+            row-gap: 5px;
+            
+            .section__subtitle {
+                  font-size: 24px;
+                  line-height: 58px;
+            }
+            .section__titleline {
+                  background-color: $white-color;
+            }
+      }
+}
+
+.create__content {
+      display: flex;
+      max-width: 100%;
+      width: 100%;
+}
+
+.create__column {
+      display: flex;
+      flex: 1 1 0;
+}
+
+.create__inner {
+      display: flex;
+      flex: 1 1 0;
+      flex-direction: column;
+      justify-content: space-around;
+      min-height: 418px;
+
+}
+
+// card
+
+.create__cardwrapper {
+      display: flex;
+}
+
+.create__card {
+      position: relative;
+      padding-left: 83px;
+}
+
+.create__countbox--wrapper {
+      position: absolute;
+      top: -10px;
+      left: 0;
+}
+
+
+
+
+
+
+.create__countbox {
+      border-width: 3px;
+      color: $white-color;
+      display: inline-block;
+      margin: 10px;
+      width: 50px;
+      aspect-ratio: 1;
+      position: relative;
+      z-index: 0;
+    }
+    
+    .create__countbox:before {
+      content:"";
+      position:absolute;
+      z-index:-1;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(57,163,82,1) 0%, rgba(242,107,53,1) 87%);
+      padding: 3px;
+      border-radius: 50%;
+      mask: 
+       linear-gradient(#000 0 0) exclude, 
+       linear-gradient(#000 0 0) content-box;
+}
+
+.create__countbox--innertext {
+      font-size: 21px;
+      line-height: 24px;
+      font-weight: $fw-700;
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.create__card--textbox {
+      display: flex;
+      flex-direction: column;
+}
+
+.create__card--title {
+      font-size: 20px;
+      line-height: 56px;
+}
+
+.create__card--subtitle {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: $fw-700;
+      color: $accent-color;
+}
+
+
+
+// Form
+
+.create__formwrapper {
+      max-width: 455px;
+      width: 100%;
+      margin: 0 auto;
+}
+
+.create__form {
+     max-width: 100%;
+     width: 100%; 
+}
+
+
+.create__form--input {
+      max-width: 100%;
+      width: 100%;
+}
+
+.create__policy--text {
+      max-width: 200px;
+}
+
+.create__form--titleblock {
+      max-width: 323px;
+      width: 100%;
+}
+

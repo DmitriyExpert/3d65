@@ -5,8 +5,9 @@
 
 @import '../scss/base/var';
 @import '../scss/base/mixin';
-@import '../scss/base/reset';
 @import '../scss/base/base';
+@import '../scss/base/reset';
+
 
 // blocks
 
@@ -15,12 +16,15 @@
 @import '../scss/blocks/intro';
 @import '../scss/blocks/viewtour';
 @import '../scss/blocks/portfolio';
-
+@import '../scss/blocks/demonstrations';
+@import '../scss/blocks/create';
 
 // components
 
 @import '../scss/components/components';
 @import '../scss/components/swiper';
+@import '../scss/components/form';
+
 // responsive
 @import '../scss/blocks/_responsive.scss';
 

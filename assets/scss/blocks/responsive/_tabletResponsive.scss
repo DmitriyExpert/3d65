@@ -80,4 +80,36 @@
             font-size: 14px;
             max-width: 150px;
       }
+
+      // create
+
+      .create__wrapper {
+            row-gap: 30px;
+      }
+      .create__content {
+            row-gap: 30px;
+            flex-direction: column;
+      }
+
+      .create__column {
+            max-width: 100%;
+      }
+
+      .create__inner {
+            margin: 0 auto;
+      }
+
+      // form 
+
+      .create__formwrapper {
+            row-gap: 20px;
+      }
+      .form__titleblock {
+            row-gap: 10px;
+      }
+      .form__title {
+            font-size: 28px;
+      }
+
+
 }

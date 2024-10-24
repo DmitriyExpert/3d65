@@ -88,6 +88,21 @@
             font-size: 14px;
             max-width: 150px;
       }
+
+      // create
+
+      
+      .create-switcherinner {
+            display: none;
+      }
+
+      .create--cardswitcherdisplay {
+            display: flex;
+      }
+
+      .create__inner {
+            max-width: 350px;
+      }
       
 
       @media (max-width: 900px) {

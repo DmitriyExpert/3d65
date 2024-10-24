@@ -1,0 +1,112 @@
+
+
+// Form
+
+.form__wrapper {
+      background: rgba(242, 108, 53, 1.0);
+      background: radial-gradient(at right bottom, rgba(242, 108, 53, 1.0), rgba(57, 163, 83, 1.0));
+      padding: 31px 28px;
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+
+      border-radius: 20px;
+}
+
+.form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 22px;
+}
+
+.form__input {
+      padding: 13px 17px;
+      color: $black-color;
+      font-weight: $fw-600;
+      border: 2px solid $white-color;
+      border-radius: 50px;
+
+      background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form__dropdown {
+      position: relative;
+      max-width: 100%;
+      width: 100%;
+      cursor: pointer;
+      & .form__input {
+            cursor: pointer;
+      }
+}
+
+.dropdown__action {
+      position: absolute;
+      display: block;
+      z-index: 10000;
+      top: 50%;
+      right: 17px;
+      transform: translateY(-50%);
+}
+
+.form__area {
+      padding: 13px 17px;
+      color: $black-color;
+      font-weight: $fw-600;
+      border: 2px solid $white-color;
+      border-radius: 20px; 
+      resize: none;
+      background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form__action {
+      max-width: 174px;
+      padding: 11px;
+      border-radius: 50px;
+      border: 2px solid $second-color;
+      background-color: $second-color;
+      text-align: center;
+      margin: 28px 0px 0px 56%;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: $fw-700;
+      transition: all .3s ease;
+      &:hover {
+            background-color: $grey-color;
+            border-color: $grey-color;
+      }
+}
+
+.policy__text {
+      position: absolute;
+      left: 31px;
+      bottom: 28px;
+      z-index: 10000;
+
+      font-size: 10px;
+      font-weight: $fw-600;
+      line-height: 15px;
+
+      & span {
+            color: $black-color;
+            cursor: pointer;
+      }
+}
+
+.form__titleblock {
+      display: flex;
+      flex-direction: column;
+      row-gap: 18px; 
+}
+
+.form__title {
+      font-size: 36px;
+      line-height: 24px;
+}
+
+.form__subtitle {
+      font-size: 16px;
+      line-height: 24px;
+}
+

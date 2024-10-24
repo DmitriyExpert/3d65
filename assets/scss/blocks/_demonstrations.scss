@@ -1,0 +1,14 @@
+
+// demonstrations
+
+.demonstrations__wrapper {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      & .section__titlewrapper .section__title {
+            color: $second-color;
+            max-width: 1040px;
+      }
+}
