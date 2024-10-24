@@ -119,6 +119,10 @@
 
       // form
 
+      .create__wrapper .section__titlewrapper .section__subtitle {
+            font-size: 14px;
+      }
+
       .form__title  {
             font-size: 24px;
       }
@@ -131,6 +135,10 @@
             font-size: 12px;
             max-width: 100px;
             margin: 0px auto 0px 0px;
+      }
+
+      .create__inner {
+            row-gap: 40px;
       }
 
       .create__formwrapper {
