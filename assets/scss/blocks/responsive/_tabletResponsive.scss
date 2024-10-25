@@ -111,5 +111,23 @@
             font-size: 28px;
       }
 
+      // questions
+
+      .questions__item {
+            padding: 20px;
+      }
+
+      .questions__title {
+            max-width: 320px;
+      }
+      .questions__subtitle {
+            max-width: 100%;
+      }
+
+      .questions__content {
+            row-gap: 40px;
+      }
+
+      
 
 }

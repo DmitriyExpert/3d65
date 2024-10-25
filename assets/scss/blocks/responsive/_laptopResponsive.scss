@@ -161,4 +161,24 @@
             width: 100%;
             margin: 20px 0px 0px auto;
       }
+
+      // questions
+
+      .questions__itemtype {
+            font-size: 28px
+      }
+
+      .questions__title {
+            font-size: 18px;
+            line-height: 20px;
+      }
+
+      .questions__subtitle {
+            font-size: 14px;
+            line-height: 20px;
+      }
+
+      .questions__openedblock {
+            row-gap: 15px;
+      }
 }
