@@ -22,7 +22,3 @@ for (var i = 0; i < questionBtnActions.length; i++) {
   
   }
 
-  var typed = new Typed('.header__number', {
-    strings: ['+7-(900)-000-00-00'],
-    typeSpeed: 100,
-  });

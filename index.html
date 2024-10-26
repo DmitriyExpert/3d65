@@ -9,17 +9,18 @@
       <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
       <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
       <main class="wrapper">
             <header class="header">
                   <div class="container">
                         <div class="header__wrapper">
-                              <div class="header__menuwrapper">
+                              <div class="header__menuwrapper" data-aos="fade-right">
                                     <a href="index.html" class="header__logo">
                                           <img src="assets/images/header/logo.svg" alt="header-logo">
                                     </a>
-                                    <button class="header__burgeraction burgeraction" id="burgerAction">
+                                    <button class="header__burgeraction burgeraction" id="burgerAction" data-aos="fade-left">
                                           <span></span>
                                           <span></span>
                                           <span></span>
@@ -35,15 +36,25 @@
                                                 <li class="menu__item">
                                                       <a href="#">Контакты</a>
                                                 </li>
+                                                <li class="menu__item">
+                                                      <a href="#">Ваши возможности</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                      <a href="#">Как мы работаем</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                      <a href="#">FAQ</a>
+                                                </li>
                                           </ul>
                                     </nav>
                               </div>
 
-                              <div class="header__contactblock">
-                                    <a href="#" class="header__number">
-                                          +7-(900)-000-00-00
-                                    </a>
+                              <div class="header__contactblock" data-aos="fade-left">
+                                    
                                     <div class="header__social">
+                                          <a href="#" class="header__social--link">
+                                                <img src="assets/images/header/phone-solid.svg" alt="phone" class="phone--icon" width="32">
+                                          </a>
                                           <a href="#" class="header__social--link">
                                                 <img src="assets/images/header/whatsapp.svg" alt="whatsapp" class="whatsapp--icon">
                                           </a>
@@ -104,7 +115,7 @@
                                           <div class="viewtour__cards">
                                                 <div class="view__card ">
                                                       <div class="view__card--imgblock">
-                                                            <img src="assets/images/viewtour/commerce.png" alt="Коммерческая недвижимость" class="view__card--img">
+                                                            <img data-aos="flip-left" data-aos-offset="150" src="assets/images/viewtour/commerce.png" alt="Коммерческая недвижимость" class="view__card--img">
                                                       </div>
                                                       <div class="view__card--textblock">
                                                             <h3 class="view__card--title">
@@ -117,7 +128,7 @@
                                                 </div>
                                                 <div class="view__card">
                                                       <div class="view__card--imgblock marg-center">
-                                                            <img src="assets/images/viewtour/life.png" alt="Жилая недвижимость" class="view__card--img">
+                                                            <img data-aos="flip-up" src="assets/images/viewtour/life.png" alt="Жилая недвижимость" class="view__card--img">
                                                       </div>
                                                       <div class="view__card--textblock text-ac">
                                                             <h3 class="view__card--title">
@@ -130,7 +141,7 @@
                                                 </div>
                                                 <div class="view__card">
                                                       <div class="view__card--imgblock marg-right">
-                                                            <img src="assets/images/viewtour/aero.png" alt="Аэросъемка" class="view__card--img">
+                                                            <img data-aos="flip-right" src="assets/images/viewtour/aero.png" alt="Аэросъемка" class="view__card--img">
                                                       </div>
                                                       <div class="view__card--textblock text-ar">
                                                             <h3 class="view__card--title">
@@ -653,24 +664,154 @@
                                           </h2>
                                           <div class="section__titleline"></div>
                                           <p class="section__subtitle">
-                                                Тогда давайте свяжемся?
+                                                Тогда давайте свяжемся
                                           </p>
+                                    </div>
+                                    <div class="form__wrapper calltome__formwrapper">
+                                          <div class="calltome__form--titleblock form__titleblock">
+                                                <h2 class="calltome__form--title form__title">
+                                                      Связаться с нами
+                                                </h2>
+                                                <p class="calltome__form--subtitle form__title--subtitle">
+                                                      Заполните данные и отправьте, с вами свяжутся в ближайшее время
+                                                </p>
+                                          </div>
+                                          <form action="#" name="#" class="form calltome__form">
+                                                <input type="text" name="name" class="form__input calltome__form--input" placeholder="Ваше имя">
+                                                <input type="email" name="email" class="form__input calltome__form--input" placeholder="Ваша почта">
+                                                <input type="tel" name="tel" class="form__input calltome__form--input" placeholder="Ваш номер">
+                                                
+                                                <button class="form__action calltome__form--action" type="submit">
+                                                      Отправить
+                                                </button>
+                                                <p class="calltome__policy--text policy__text">
+                                                      *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
+                                                </p>
+                                          </form>
+                                          
                                     </div>
                               </div>
                         </div>
                   </section>
             </div>
-
+            <hr class="between__line">
             <footer class="footer">
-                  <div class="container">
-                        
+                  <div class="container container__footer--flex">
+                        <div class="footer__wrapper">
+                              <div class="footer__column">
+                                    <div class="footer__leftwrapper">
+                                          <a href="index.html" class="footer__logo">
+                                                <img src="assets/images/footer/logo.svg" alt="logo" class="logo">
+                                          </a>
+
+                                          <div class="footer__btnwrapper">
+                                                <button class="footer__btn" type="button">
+                                                      Оставить заявку на 3D-Тур
+                                                </button>
+                                                <button class="footer__btn footer__secondbtn" type="button">
+                                                      Портфолио
+                                                </button>
+                                          </div>
+                                          <div class="footer__contactwrapper">
+                                                <h3 class="footer__contacttitle">
+                                                      Контакты
+                                                </h3>
+                                                <a href="#" class="footer__contactnum">
+                                                      +7-900-000-00-00
+                                                </a>
+                                                <div class="footer__socialblock">
+                                                      <a href="#" class="footer__socialicon">
+                                                            <img src="assets/images/footer/whatsapp.svg" alt="whatsapp" width="32">
+                                                      </a>
+                                                      <a href="#" class="footer__socialicon">
+                                                            <img src="assets/images/footer/mail.svg" alt="mail" width="32">
+                                                      </a>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              
+                              <div class="footer__column">
+                                    <nav class="footer__nav">
+                                          <h3 class="footer__nav--title">
+                                                Меню
+                                          </h3>
+                                          <ul class="footer__menu">
+                                                <li class="footer__menu--item">
+                                                      <a href="#">
+                                                            Главная
+                                                      </a>
+                                                </li>
+                                                <li class="footer__menu--item">
+                                                      <a href="#">
+                                                            Портфолио
+                                                      </a>
+                                                </li>
+                                                <li class="footer__menu--item">
+                                                      <a href="#">
+                                                            Ваши возможности
+                                                      </a>
+                                                </li>
+                                                <li class="footer__menu--item">
+                                                      <a href="#">
+                                                            Как мы работаем?
+                                                      </a>
+                                                </li>
+                                                <li class="footer__menu--item">
+                                                      <a href="#">
+                                                            FAQ
+                                                      </a>
+                                                </li>
+                                          </ul>
+                                    </nav>
+                              </div>
+                              <div class="footer__column">
+                                    <div class="form__wrapper footer__formwrapper">
+                                          <div class="footer__form--titleblock form__titleblock">
+                                                <h2 class="footer__form--title form__title">
+                                                      Задать свой вопрос
+                                                </h2>
+                                                <p class="footer__form--subtitle form__title--subtitle">
+                                                      Отправьте вопрос, ответ придет на указанную вами почту
+                                                </p>
+                                          </div>
+                                          <form action="#" name="#" class="form footer__form">
+                                                <input type="text" name="name" class="form__input footer__form--input" placeholder="Ваше имя">
+                                                <input type="email" name="email" class="form__input footer__form--input" placeholder="Ваша почта">
+                                                <textarea rows="10" name="comment" id="area--comment" class="form__area footer__form--area" placeholder="Ваш вопрос?..."></textarea>
+                                                <button class="form__action footer__form--action" type="submit">
+                                                      Отправить
+                                                </button>
+                                                <p class="footer__policy--text policy__text">
+                                                      *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
+                                                </p>
+                                          </form>
+                                          
+                                    </div>
+                              </div>
+                        </div>
+                        <hr class="footer__line">
+                        <div class="footer__warpper">
+                              <div class="footer__policyblock">
+                                    <p class="footer--policy">
+                                          Политика конфиденциальности
+                                    </p>
+                                    <p class="footer--year">
+                                          2024г
+                                    </p>
+                              </div>
+                        </div>
                   </div>
             </footer>
       </main>
       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script src="slick/slick.min.js"></script>
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
       <script src="assets/js/slick.js"></script> 
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script src="assets/js/aos.js"></script>
+
+      <script src="assets/js/typed.js"></script>
       <script src="assets/js/main.js"></script>
 </body>
 </html>

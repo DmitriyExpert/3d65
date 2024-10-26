@@ -1,6 +1,14 @@
 
 // li element
 @mixin li-elementstyle {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: $fw-700;
+}
+
+@mixin gradient-text {
+      background: linear-gradient(90deg, rgba(57,163,82,1) 0%, rgba(242,107,53,1) 59%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: $second-color;
+      display: table;
 }

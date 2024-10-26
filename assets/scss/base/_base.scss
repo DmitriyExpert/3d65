@@ -3,6 +3,12 @@
 
 // Container
 
+.container__footer--flex {
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+}
+
 // section
 
 .section {

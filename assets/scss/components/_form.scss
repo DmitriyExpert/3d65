@@ -29,6 +29,9 @@
       border-radius: 50px;
 
       background-color: rgba(255, 255, 255, 0.3);
+      &::placeholder {
+            color: $black-color;
+      }
 }
 
 .form__dropdown {
@@ -65,6 +68,9 @@
       border: 2px solid $white-color;
       border-radius: 20px; 
       resize: none;
+      &::placeholder {
+            color: $black-color;
+      }
       background-color: rgba(255, 255, 255, 0.3);
 }
 

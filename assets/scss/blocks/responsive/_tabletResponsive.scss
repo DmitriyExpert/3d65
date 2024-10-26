@@ -48,6 +48,10 @@
 
       // portfolio
 
+      .portfolio__wrapper {
+            row-gap: 30px;
+      }
+
       .portfolio__content {
             row-gap: 40px;
       }
@@ -128,6 +132,25 @@
             row-gap: 40px;
       }
 
+      // footer
+
+      .footer__btn {
+            font-size: 14px;
+      }
+
+      .footer__contacttitle  {
+            font-size: 20px;
+      }
+
+      .footer__nav--title {
+            font-size: 20px;
+      }
+
+      .footer__menu--item {
+            font-size: 14px;
+      }
+
+      
       
 
 }

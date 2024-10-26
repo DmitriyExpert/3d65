@@ -1,0 +1,156 @@
+
+// Footer
+
+.footer {
+      padding: 20px 0px 22px 0px;
+      background-color: $black-color;
+}
+
+
+.footer__wrapper {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 20px;
+}
+
+.footer__leftwrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+}
+
+.footer__logo img {
+      width: 150px;
+}
+
+.footer__btnwrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 37px;
+}
+
+.footer__btn {
+      padding: 20px 20px;
+      border: solid 2px $second-color;
+      border-radius: 50px;
+      background-color: $second-color;
+      text-align: center;
+      max-width: 400px;
+      font-weight: $fw-700;
+      font-size: 20px;
+      line-height: 15px;
+
+      transition: all .3s ease;
+      &:hover {
+            border-color: $accent-color;
+            background-color: $accent-color;
+            color: $white-color;
+      }
+      &.footer__secondbtn {
+            max-width: 233px;
+      }
+}
+
+.footer__socialblock {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+}
+
+.footer__socialicon {
+      transition: all .3s ease;
+      &:hover {
+            scale: 1.1;
+      }
+}
+
+.footer__contactwrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 18px;
+}
+
+.footer__contacttitle {
+      font-size: 32px;
+      line-height: 24px;
+      color: $accent-color;
+}
+
+.footer__contactnum {
+      @include gradient-text;
+      font-size: 20px;
+      font-weight: $fw-700;
+      line-height: 15px;
+}
+
+
+// Navigation
+
+.footer__nav {
+      display: flex;
+      flex-direction: column;
+      row-gap: 35px;
+      text-align: center;
+}
+
+.footer__nav--title {
+      font-size: 32px;
+      line-height: 15px;
+      color: $accent-color;
+}
+
+.footer__menu {
+      display: flex;    
+      flex-direction: column;
+      row-gap: 23px;
+}
+
+.footer__menu--item {
+      @include gradient-text;
+      position: relative;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: $fw-700;
+      transition: all .3s ease-in-out;
+      display: inline-block;
+      
+}
+
+.footer__line {
+      height: 2px;
+      max-width: 100%;
+      width: 100%;
+      background: linear-gradient(90deg, rgba(57,163,82,1) 0%, rgba(242,107,53,1) 59%);
+}
+
+.footer__policyblock {
+      max-width: 247px;
+      font-size: 14px;
+      font-weight: $fw-700;
+      line-height: 15px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      margin: 0 auto;
+      text-align: center;
+}
+
+.footer--policy {
+      @include gradient-text;
+      cursor: pointer;
+}
+
+// form 
+
+.footer__formwrapper {
+      max-width: 455px;
+      width: 100%;
+}
+
+.footer__policy--text.policy__text {
+      max-width: 200px;
+}
+

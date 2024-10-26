@@ -79,6 +79,7 @@
       line-height: 40px;
       &.intro__subtitle--width {
             max-width: 649px;
+            margin: 0 auto;
       }
       & span {
             color: $accent-color;

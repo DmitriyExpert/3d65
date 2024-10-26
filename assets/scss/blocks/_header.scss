@@ -10,7 +10,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-
+      column-gap: 50px;
       max-width: 100%;
       width: 100%;
 }
@@ -18,7 +18,7 @@
 .header__menuwrapper {
       display: flex;
       align-items: center;
-      column-gap: 151px;
+      column-gap: 70px;
 }
 
 // Header menu
@@ -33,11 +33,12 @@
 .menu__item {
       @include li-elementstyle;
       position: relative;
+      @include gradient-text;
       transition: all .3s ease-in-out;
       &:hover {
             color: $accent-color;
             &::after {
-                  width: 100%;
+                  width: 50%;
             }
       }
 
@@ -46,7 +47,7 @@
             display: block;
             position: absolute;
             height: 2px;
-            background-color: $accent-color;
+            background: linear-gradient(90deg, rgba(57,163,82,1) 28%, rgba(242,107,53,1) 100%);
             max-width: 100%;
             width: 0%;
             bottom: -6px;
@@ -62,22 +63,13 @@
       align-items: center;
 }
 
-.header__number {
-      font-size: 24px;
-      font-weight: $fw-700;
-      transition: all .3s ease;
-      &:hover {
-            color: $accent-color;
-      }
-}
+
 
 .header__social {
-      padding-left: 47px;
       display: flex;
       align-items: center;
       column-gap: 30px;
 
-      border-left: 2px solid $white-color;
 }
 
 .header__social--link {

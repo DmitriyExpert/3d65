@@ -3,10 +3,19 @@
 
 @media (max-width: $large-size) {
 
+
       // section
 
       .section {
-            padding: 90px 0px;
+            padding: 70px 0px;
+      }
+
+      .header {
+            padding: 20px 0px;
+      }
+
+      .section__intro  {
+            padding: 70px 0px;
       }
 
       //sectio title
@@ -23,11 +32,14 @@
       // Header
 
       .header__menuwrapper {
-            column-gap: 70px;
+            column-gap: 20px;
+      }
+      .header__menu {
+            column-gap: 15px;
       }
 
       .menu__item {
-            font-size: 15px;
+            font-size: 13px;
       }
 
       .header__number {
@@ -36,6 +48,10 @@
 
       .header__social--link {
             max-width: 28px;
+      }
+
+      .header__social--link img {
+            width: 23px;
       }
 
       // Intro
@@ -103,21 +119,20 @@
       .create__inner {
             max-width: 350px;
       }
+
+      // footer 
+
+      .footer__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            row-gap: 80px;
+      }
       
 
       @media (max-width: 900px) {
 
             // Header
-            .header__wrapper {
-                  align-items: flex-start;
-            }
-
-
-            .header__menuwrapper {
-                  flex-direction: column;
-                  align-items: start;
-                  row-gap: 20px;
-            }
+      
 
             // viewtour 
 
