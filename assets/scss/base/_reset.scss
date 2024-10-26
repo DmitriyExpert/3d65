@@ -4,6 +4,18 @@
 	border: none;
 }
 
+html {
+      scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+      background: linear-gradient(0deg, rgba(57,163,82,1) 11%, rgba(242,107,53,1) 73%);
+}
+
+::-webkit-scrollbar-thumb {
+      background: $grey-color;
+}
+
 *,
 *::before,
 *::after {
