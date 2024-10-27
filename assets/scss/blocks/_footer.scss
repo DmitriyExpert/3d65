@@ -116,10 +116,13 @@
       font-weight: $fw-700;
       transition: all .3s ease-in-out;
       display: inline-block;
-      
+      animation: linergradient .5s ease infinite;
 }
 
+
+
 .footer__line {
+      position: relative;
       height: 2px;
       max-width: 100%;
       width: 100%;

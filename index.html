@@ -75,7 +75,7 @@
                               <div class="intro__wrapper">
                                     <div class="intro__row">
                                           <div class="intro__textbox">
-                                                <div class="intro__titlebox">
+                                                <div class="intro__titlebox titles__anim">
                                                       <h1 class="intro__title" data-aos="fade-right">
                                                             Создание виртуальных 3D туров на заказ в г. Южно-Сахалинске и по Сахалинской области.
                                                       </h1>
@@ -100,11 +100,11 @@
                   <section class="section section__viewtour">
                         <div class="container">
                               <div class="viewtour__wrapper">
-                                    <div class="section__titlewrapper" data-aos="fade-right">
-                                          <h2 class="section__title" >
+                                    <div class="section__titlewrapper animationTitleTarget">
+                                          <h2 class="section__title">
                                                 Привлекайте больше клиентов
                                           </h2>
-                                          <p class="section__subtitle" data-aos="fade-right" data-aos-duration="600">
+                                          <p class="section__subtitle">
                                                 Показывайте 3D-туры
                                           </p>
 
@@ -115,9 +115,9 @@
                                           <div class="viewtour__cards">
                                                 <div class="view__card ">
                                                       <div class="view__card--imgblock">
-                                                            <img data-aos="flip-left" data-aos-offset="150" src="assets/images/viewtour/commerce.png" alt="Коммерческая недвижимость" class="view__card--img">
+                                                            <img src="assets/images/viewtour/commerce.png" alt="Коммерческая недвижимость" class="view__card--img">
                                                       </div>
-                                                      <div class="view__card--textblock" data-aos="fade-down">
+                                                      <div class="view__card--textblock">
                                                             <h3 class="view__card--title">
                                                                   Коммерческая недвижимость
                                                             </h3>
@@ -128,9 +128,9 @@
                                                 </div>
                                                 <div class="view__card">
                                                       <div class="view__card--imgblock marg-center">
-                                                            <img data-aos="flip-up" src="assets/images/viewtour/life.png" alt="Жилая недвижимость" class="view__card--img">
+                                                            <img src="assets/images/viewtour/life.png" alt="Жилая недвижимость" class="view__card--img">
                                                       </div>
-                                                      <div class="view__card--textblock text-ac" data-aos="fade-up">
+                                                      <div class="view__card--textblock text-ac">
                                                             <h3 class="view__card--title">
                                                                   Жилая недвижимость
                                                             </h3>
@@ -141,9 +141,9 @@
                                                 </div>
                                                 <div class="view__card">
                                                       <div class="view__card--imgblock marg-right">
-                                                            <img data-aos="flip-right" src="assets/images/viewtour/aero.png" alt="Аэросъемка" class="view__card--img">
+                                                            <img src="assets/images/viewtour/aero.png" alt="Аэросъемка" class="view__card--img">
                                                       </div>
-                                                      <div class="view__card--textblock text-ar" data-aos="fade-down">
+                                                      <div class="view__card--textblock text-ar">
                                                             <h3 class="view__card--title">
                                                                   Аэросъемка
                                                             </h3>
@@ -160,35 +160,34 @@
                   <section class="section section__portfolio" id="porfolio--section">
                         <div class="container">
                               <div class="portfolio__wrapper">
-                                    <div class="section__titlewrapper">
-                                          <h2 class="section__title" data-aos="fade-right">
+                                    <div class="section__titlewrapper animationTitleTarget">
+                                          <h2 class="section__title">
                                                 Портфолио
                                           </h2>
-                                          <p class="section__subtitle" data-aos="fade-left">
+                                          <p class="section__subtitle">
                                                 Примеры работ
                                           </p>
 
-                                          <div class="section__titleline" data-aos="fade-right" data-aos-duration="700"></div>
+                                          <div class="section__titleline"></div>
                                     </div>
 
                                     <div class="portfolio__content">
                                           <div class="portfolio__category">
-                                                <button class="portfolio__category--btn" id="categoryAction" type="button" data-aos="zoom-in">
+                                                <button class="portfolio__category--btn" id="categoryAction" type="button">
                                                       <p>Категории</p>
                                                       <img src="assets/images/portfolio/arrow-down.svg" alt="Расскрыть категории" id="portfolioArrowAction">
                                                 </button>
-                                                <hr class="portfolio__category--line" data-aos="flip-right" data-aos-duration="700">
+                                                <hr class="portfolio__category--line">
                                           </div>
-                                          <div class="portfolio__sliderwrapper" data-aos="zoom-in-up" data-aos-duration="700">
+                                          <div class="portfolio__sliderwrapper">
                                                 
                                           
                                                 <div class="portfolio__slide">
                                                       <div class="portfolio__slidebody">
                                                             <div class="portfolio__slide--imgblock">
                                                                   <img src="assets/images/portfolio/panoramslide.png" alt="slide" class="portfolio__slide--img">
-                                                                  
-                                                                  <a href="https://360.3d65.ru/vostok/index.htm" class="portfolio__slide--playaction" target="_blank">
-                                                                        <img src="assets/images/portfolio/play.png" alt="play" width="110" height="110">
+                                                                  <a id="play-video" class="video-play-button" href="#">
+                                                                        <span></span>
                                                                   </a>
       
                                                             </div>
@@ -200,7 +199,7 @@
                                                                         Готовый интерактивный 3D тур в Учебно-тренировочном центре "Восток" с размещением на сайте центра и Яндекс карт. 
                                                                   </p>
                                                                   
-                                                                  <a href="https://360.3d65.ru/vostok/index.htm" target="_blank" class="slide--panaramshowbtn">
+                                                                  <a href="https://360.3d65.ru/vostok/index.htm" target="_blank" class="slide--panaramshowbtn b-n-animation">
                                                                         Посмотреть
                                                                   </a>
                                                                
@@ -211,9 +210,8 @@
                                                       <div class="portfolio__slidebody">
                                                             <div class="portfolio__slide--imgblock">
                                                                   <img src="assets/images/portfolio/panoramslide.png" alt="slide" class="portfolio__slide--img">
-                                                                  
-                                                                  <a href="https://360.3d65.ru/vostok/index.htm" class="portfolio__slide--playaction" target="_blank">
-                                                                        <img src="assets/images/portfolio/play.png" alt="play" width="110" height="110">
+                                                                  <a id="play-video" class="video-play-button" href="#">
+                                                                        <span></span>
                                                                   </a>
       
                                                             </div>
@@ -225,7 +223,7 @@
                                                                         Готовый интерактивный 3D тур в Учебно-тренировочном центре "Восток" с размещением на сайте центра и Яндекс карт. 
                                                                   </p>
                                                                   
-                                                                  <a href="https://360.3d65.ru/vostok/index.htm" target="_blank" class="slide--panaramshowbtn">
+                                                                  <a href="https://360.3d65.ru/vostok/index.htm" target="_blank" class="slide--panaramshowbtn b-n-animation">
                                                                         Посмотреть
                                                                   </a>
                                                                
@@ -236,9 +234,8 @@
                                                       <div class="portfolio__slidebody">
                                                             <div class="portfolio__slide--imgblock">
                                                                   <img src="assets/images/portfolio/panoramslide.png" alt="slide" class="portfolio__slide--img">
-                                                                  
-                                                                  <a href="https://360.3d65.ru/vostok/index.htm" class="portfolio__slide--playaction" target="_blank">
-                                                                        <img src="assets/images/portfolio/play.png" alt="play" width="110" height="110">
+                                                                  <a id="play-video" class="video-play-button" href="#">
+                                                                        <span></span>
                                                                   </a>
       
                                                             </div>
@@ -250,14 +247,14 @@
                                                                         Готовый интерактивный 3D тур в Учебно-тренировочном центре "Восток" с размещением на сайте центра и Яндекс карт. 
                                                                   </p>
                                                                   
-                                                                  <a href="https://360.3d65.ru/vostok/index.htm" target="_blank" class="slide--panaramshowbtn">
+                                                                  <a href="https://360.3d65.ru/vostok/index.htm" target="_blank" class="slide--panaramshowbtn b-n-animation">
                                                                         Посмотреть
                                                                   </a>
                                                             </div>
                                                       </div>
                                                 </div>
                                           </div>
-                                          <button class="btn portfolio__moreworks" type="button" name="Больше работ" data-aos="flip-right" data-aos-duration="600">Больше работ</button>
+                                          <button class="btn portfolio__moreworks" type="button" name="Больше работ">Больше работ</button>
                                           
                                     </div>
                               </div>
@@ -267,11 +264,11 @@
                   <section class="section section__demonstrations" id="demonstration--section">
                         <div class="container">
                               <div class="demonstrations__wrapper">
-                                    <div class="section__titlewrapper">
-                                          <h2 class="section__title" data-aos="fade-right">
+                                    <div class="section__titlewrapper animationTitleTarget">
+                                          <h2 class="section__title">
                                                 Используйте 3D-туры для быстрых демонстраций и эффективных продаж
                                           </h2>
-                                          <div class="section__titleline" data-aos="fade-right" data-aos-duration="600"></div>
+                                          <div class="section__titleline"></div>
                                     </div>
                               </div>
                         </div>
@@ -280,21 +277,21 @@
                   <section class="section section__create" id="create--section">
                         <div class="container">
                               <div class="create__wrapper">
-                                    <div class="section__titlewrapper">
-                                          <h2 class="section__title" data-aos="fade-right">
+                                    <div class="section__titlewrapper animationTitleTarget">
+                                          <h2 class="section__title">
                                                 Как происходит создание?
                                           </h2>
-                                          <p class="section__subtitle" data-aos="fade-right" data-aos-duration="700">
+                                          <p class="section__subtitle">
                                                 Всего в несколько шагов
                                           </p>
 
-                                          <div class="section__titleline" data-aos="fade-right" data-aos-duration="600"></div>
+                                          <div class="section__titleline"></div>
                                     </div>
 
                                     <div class="create__content">
                                           <div class="create__column">
                                                 <div class="create__inner">
-                                                      <div class="create__card" data-aos="fade-right">
+                                                      <div class="create__card">
                                                             <div class="create__countbox--wrapper">
                                                                   <div class="create__countbox">
                                                                         <p class="create__countbox--innertext">
@@ -306,12 +303,12 @@
                                                                   <h3 class="create__card--title">
                                                                         Расчет стоимости
                                                                   </h3>
-                                                                  <p class="create__card--subtitle" data-aos="fade-right" data-aos-duration="600">
+                                                                  <p class="create__card--subtitle">
                                                                         Уточнение деталей проекта, расчёт стоимости, заключение договора и оплата.
                                                                   </p>
                                                             </div>
                                                       </div>
-                                                      <div class="create__card create--cardswitcherdisplay" data-aos="fade-left">
+                                                      <div class="create__card create--cardswitcherdisplay">
                                                             <div class="create__countbox--wrapper">
                                                                   <div class="create__countbox">
                                                                         <p class="create__countbox--innertext">
@@ -323,12 +320,12 @@
                                                                   <h3 class="create__card--title">
                                                                         Расчет стоимости
                                                                   </h3>
-                                                                  <p class="create__card--subtitle" data-aos="fade-left" data-aos-duration="600">
+                                                                  <p class="create__card--subtitle">
                                                                         Уточнение деталей проекта, расчёт стоимости, заключение договора и оплата.
                                                                   </p>
                                                             </div>
                                                       </div>
-                                                      <div class="create__card" data-aos="fade-right">
+                                                      <div class="create__card">
                                                             <div class="create__countbox--wrapper">
                                                                   <div class="create__countbox">
                                                                         <p class="create__countbox--innertext">
@@ -340,14 +337,14 @@
                                                                   <h3 class="create__card--title">
                                                                         Расчет стоимости
                                                                   </h3>
-                                                                  <p class="create__card--subtitle" data-aos="fade-right" data-aos-duration="600">
+                                                                  <p class="create__card--subtitle">
                                                                         Уточнение деталей проекта, расчёт стоимости, заключение договора и оплата.
                                                                   </p>
                                                             </div>
                                                       </div>
                                                 </div>
                                                 <div class="create__inner jc-center create-switcherinner">
-                                                      <div class="create__card" data-aos="fade-left">
+                                                      <div class="create__card">
                                                             <div class="create__countbox--wrapper">
                                                                   <div class="create__countbox">
                                                                         <p class="create__countbox--innertext" >
@@ -359,7 +356,7 @@
                                                                   <h3 class="create__card--title">
                                                                         Расчет стоимости
                                                                   </h3>
-                                                                  <p class="create__card--subtitle" data-aos="fade-left" data-aos-duration="600">
+                                                                  <p class="create__card--subtitle">
                                                                         Уточнение деталей проекта, расчёт стоимости, заключение договора и оплата.
                                                                   </p>
                                                             </div>
@@ -367,7 +364,7 @@
                                                 </div>
                                           </div>
                                           <div class="create__column">
-                                                <div class="form__wrapper create__formwrapper" data-aos="flip-right" data-aos-duration="700">
+                                                <div class="form__wrapper create__formwrapper form-anim-background">
                                                       <div class="create__form--titleblock form__titleblock">
                                                             <h2 class="create__form--title form__title">
                                                                   Оставить заявку
@@ -386,7 +383,7 @@
                                                             </div>
                                                             <input type="tel" name="tel" class="form__input create__form--input" placeholder="Ваш номер">
                                                             <textarea rows="10" name="comment" id="area--comment" class="form__area create__form--area" placeholder="Комментарий к заявке"></textarea>
-                                                            <button class="form__action create__form--action" type="submit">
+                                                            <button class="form__action create__form--action b-n-animation" type="submit">
                                                                   Отправить
                                                             </button>
                                                       </form>
@@ -409,23 +406,23 @@
                   <section class="section section__questions" id="questions--section">
                         <div class="container">
                               <div class="questions__wrapper">
-                                    <div class="section__titlewrapper">
-                                          <h2 class="section__title" data-aos="fade-right">
+                                    <div class="section__titlewrapper animationTitleTarget">
+                                          <h2 class="section__title">
                                                 Часто задаваемые вопросы
                                           </h2>
-                                          <p class="section__subtitle" data-aos="fade-left" data-aos-duration="700">
+                                          <p class="section__subtitle">
                                                 FAQ
                                           </p>
 
-                                          <div class="section__titleline" data-aos="fade-right" data-aos-duration="700"></div>
+                                          <div class="section__titleline"></div>
                                     </div>
-                                    <hr class="questions__line" data-aos="flip-right" data-aos-duration="700">
+                                    <hr class="questions__line">
                                     <div class="questions__content">
                                           <div class="questions__itemwrapper">
-                                                <h3 class="questions__itemtype" data-aos="flip-up">
+                                                <h3 class="questions__itemtype">
                                                       Общие вопросы
                                                 </h3>
-                                                <div class="questions__item" data-aos="fade-up">
+                                                <div class="questions__item">
                                                       <div class="questions__closedblock">
                                                             <h4 class="questions__title">
                                                                   Что такое Виртуальный Тур?
@@ -447,7 +444,7 @@
                                                             </div>
                                                       </div>
                                                 </div>
-                                                <div class="questions__item" data-aos="fade-up">
+                                                <div class="questions__item">
                                                       <div class="questions__closedblock">
                                                             <h4 class="questions__title">
                                                                   Мой объект далеко от города. Возьметесь?
@@ -467,7 +464,7 @@
                                                             </div>
                                                       </div>
                                                 </div>
-                                                <div class="questions__item" data-aos="fade-up">
+                                                <div class="questions__item">
                                                       <div class="questions__closedblock">
                                                             <h4 class="questions__title">
                                                                   Как рассчитать стоимость виртуального тура?
@@ -494,7 +491,7 @@
                                                             </div>
                                                       </div>
                                                 </div>
-                                                <div class="questions__item" data-aos="fade-up">
+                                                <div class="questions__item">
                                                       <div class="questions__closedblock">
                                                             <h4 class="questions__title">
                                                                   Есть ли скидки?
@@ -512,7 +509,7 @@
                                                             </div>
                                                       </div>
                                                 </div>
-                                                <div class="questions__item" data-aos="fade-up">
+                                                <div class="questions__item">
                                                       <div class="questions__closedblock">
                                                             <h4 class="questions__title">
                                                                   Как готовить объект к съемке?
@@ -557,7 +554,7 @@
                                                             </div>
                                                       </div>
                                                 </div>
-                                                <div class="questions__item" data-aos="fade-up">
+                                                <div class="questions__item">
                                                       <div class="questions__closedblock">
                                                             <h4 class="questions__title">
                                                                   Как быстро создается 3д Тур?
@@ -584,7 +581,7 @@
                                                             </div>
                                                       </div>
                                                 </div>
-                                                <div class="questions__item" data-aos="fade-up">
+                                                <div class="questions__item">
                                                       <div class="questions__closedblock">
                                                             <h4 class="questions__title">
                                                                   Хотим улицу отснять летом, а помещения зимой. Как поступить?
@@ -605,10 +602,10 @@
                                                 </div>
                                           </div>
                                           <div class="questions__itemwrapper">
-                                                <h3 class="questions__itemtype" data-aos="flip-up">
+                                                <h3 class="questions__itemtype">
                                                       Технические вопросы
                                                 </h3>
-                                                <div class="questions__item" data-aos="fade-up">
+                                                <div class="questions__item">
                                                       <div class="questions__closedblock">
                                                             <h4 class="questions__title">
                                                                   У меня нет сайта. Что делать?
@@ -628,7 +625,7 @@
                                                             </div>
                                                       </div>
                                                 </div>
-                                                <div class="questions__item" data-aos="fade-up">
+                                                <div class="questions__item">
                                                       <div class="questions__closedblock">
                                                             <h4 class="questions__title">
                                                                   Хотим добавить в 3д тур фото, описания объектов, ссылки... Возможно?
@@ -658,16 +655,16 @@
                   <section class="section section__calltome">
                         <div class="container">
                               <div class="calltome__wrapper">
-                                    <div class="section__titlewrapper">
-                                          <h2 class="section__title" data-aos="fade-down" data-aos-duration="700">
+                                    <div class="section__titlewrapper animationTitleTarget">
+                                          <h2 class="section__title">
                                                 Мы смогли вас заинтересовать?
                                           </h2>
                                           <div class="section__titleline"></div>
-                                          <p class="section__subtitle" data-aos="fade-down">
+                                          <p class="section__subtitle">
                                                 Тогда давайте свяжемся
                                           </p>
                                     </div>
-                                    <div class="form__wrapper calltome__formwrapper" data-aos="zoom-in-down">
+                                    <div class="form__wrapper calltome__formwrapper form-anim-background">
                                           <div class="calltome__form--titleblock form__titleblock">
                                                 <h2 class="calltome__form--title form__title">
                                                       Связаться с нами
@@ -681,7 +678,7 @@
                                                 <input type="email" name="email" class="form__input calltome__form--input" placeholder="Ваша почта">
                                                 <input type="tel" name="tel" class="form__input calltome__form--input" placeholder="Ваш номер">
                                                 
-                                                <button class="form__action calltome__form--action" type="submit">
+                                                <button class="form__action calltome__form--action b-n-animation" type="submit">
                                                       Отправить
                                                 </button>
                                                 <p class="calltome__policy--text policy__text">
@@ -694,25 +691,25 @@
                         </div>
                   </section>
             </div>
-            <hr class="between__line" data-aos="fade-right" data-aos-duration="700">
+            <hr class="between__line">
             <footer class="footer" id="footer">
                   <div class="container container__footer--flex">
                         <div class="footer__wrapper">
                               <div class="footer__column">
                                     <div class="footer__leftwrapper">
-                                          <a href="index.html" class="footer__logo" data-aos="fade-right">
+                                          <a href="index.html" class="footer__logo">
                                                 <img src="assets/images/footer/logo.svg" alt="logo" class="logo">
                                           </a>
 
                                           <div class="footer__btnwrapper">
-                                                <button class="footer__btn" type="button" id="reportTo3d" data-aos="fade-right" data-aos-duration="600">
+                                                <button class="footer__btn" type="button" id="reportTo3d">
                                                       Оставить заявку на 3D-Тур
                                                 </button>
-                                                <button class="footer__btn footer__secondbtn" type="button" id="footerToPortfolio" data-aos="fade-right" data-aos-duration="700">
+                                                <button class="footer__btn footer__secondbtn" type="button" id="footerToPortfolio">
                                                       Портфолио
                                                 </button>
                                           </div>
-                                          <div class="footer__contactwrapper" data-aos="fade-right" data-aos-duration="800">
+                                          <div class="footer__contactwrapper">
                                                 <h3 class="footer__contacttitle">
                                                       Контакты
                                                 </h3>
@@ -733,31 +730,31 @@
                               
                               <div class="footer__column">
                                     <nav class="footer__nav">
-                                          <h3 class="footer__nav--title" data-aos="fade-down">
+                                          <h3 class="footer__nav--title">
                                                 Меню
                                           </h3>
                                           <ul class="footer__menu">
-                                                <li class="footer__menu--item" data-aos="fade-up" data-aos-duration="600">
+                                                <li class="footer__menu--item">
                                                       <a href="#header">
                                                             Главная
                                                       </a>
                                                 </li>
-                                                <li class="footer__menu--item" data-aos="fade-up" data-aos-duration="700">
+                                                <li class="footer__menu--item">
                                                       <a href="#porfolio--section">
                                                             Портфолио
                                                       </a>
                                                 </li>
-                                                <li class="footer__menu--item" data-aos="fade-up" data-aos-duration="800">
+                                                <li class="footer__menu--item">
                                                       <a href="#demonstration--section">
                                                             Ваши возможности
                                                       </a>
                                                 </li>
-                                                <li class="footer__menu--item" data-aos="fade-up" data-aos-duration="900">
+                                                <li class="footer__menu--item">
                                                       <a href="#create--section">
                                                             Как мы работаем?
                                                       </a>
                                                 </li>
-                                                <li class="footer__menu--item" data-aos="fade-up" data-aos-duration="1000">
+                                                <li class="footer__menu--item">
                                                       <a href="#questions--section">
                                                             FAQ
                                                       </a>
@@ -766,7 +763,7 @@
                                     </nav>
                               </div>
                               <div class="footer__column">
-                                    <div class="form__wrapper footer__formwrapper" data-aos="flip-right" data-aos-duration="800">
+                                    <div class="form__wrapper footer__formwrapper form-anim-background">
                                           <div class="footer__form--titleblock form__titleblock">
                                                 <h2 class="footer__form--title form__title">
                                                       Задать свой вопрос
@@ -779,7 +776,7 @@
                                                 <input type="text" name="name" class="form__input footer__form--input" placeholder="Ваше имя">
                                                 <input type="email" name="email" class="form__input footer__form--input" placeholder="Ваша почта">
                                                 <textarea rows="10" name="comment" id="area--comment" class="form__area footer__form--area" placeholder="Ваш вопрос?..."></textarea>
-                                                <button class="form__action footer__form--action" type="submit">
+                                                <button class="form__action footer__form--action b-n-animation" type="submit">
                                                       Отправить
                                                 </button>
                                                 <p class="footer__policy--text policy__text">
@@ -813,6 +810,7 @@
 
       <script src="assets/js/typed.js"></script>
       <script src="assets/js/scroll.js"></script>
+      <script src="assets/js/animation.js"></script>
       <script src="assets/js/main.js"></script>
 </body>
 </html>

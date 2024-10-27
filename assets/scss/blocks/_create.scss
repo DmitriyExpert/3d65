@@ -91,9 +91,17 @@
       background: linear-gradient(0deg, rgba(57,163,82,1) 0%, rgba(242,107,53,1) 87%);
       padding: 3px;
       border-radius: 50%;
+      animation: rotated 2s infinite linear;
       mask: 
        linear-gradient(#000 0 0) exclude, 
        linear-gradient(#000 0 0) content-box;
+       
+}
+
+@keyframes rotated {
+      100%{
+            transform: rotate(360deg);
+      }
 }
 
 .create__countbox--innertext {
