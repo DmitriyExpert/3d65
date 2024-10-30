@@ -10,6 +10,9 @@
       <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
       <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+      <link rel="stylesheet" href="node_modules/@fancyapps/ui/dist/fancybox/fancybox.css" />
 </head>
 <body>
       <main class="wrapper">
@@ -20,11 +23,16 @@
                                     <a href="index.html" class="header__logo">
                                           <img src="assets/images/header/logo.svg" alt="header-logo">
                                     </a>
-                                    <button class="header__burgeraction burgeraction" id="burgerAction" data-aos="fade-left">
-                                          <span></span>
-                                          <span></span>
-                                          <span></span>
-                                    </button>
+                                    <div class="header__mobile--menu">
+                                          <a href="tel:+79621290909" class="header__social--link">
+                                                <img src="assets/images/header/phone-solid.svg" alt="phone" class="phone--icon" width="32">
+                                          </a>
+                                          <button class="header__burgeraction burgeraction" id="burgerAction" data-aos="fade-left">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                          </button>
+                                    </div>
                                     <nav class="header__nav">
                                           <ul class="header__menu menu">
                                                 <li class="menu__item">
@@ -52,16 +60,54 @@
                               <div class="header__contactblock" data-aos="fade-left">
                                     
                                     <div class="header__social">
-                                          <a href="#" class="header__social--link">
+                                          <a href="tel:+79621290909" class="header__social--link">
                                                 <img src="assets/images/header/phone-solid.svg" alt="phone" class="phone--icon" width="32">
                                           </a>
-                                          <a href="#" class="header__social--link">
+                                          <a href="https://api.whatsapp.com/send/?phone=79621290909&text=Здравствуйте%2C+у+меня+есть+вопрос" class="header__social--link">
                                                 <img src="assets/images/header/whatsapp.svg" alt="whatsapp" class="whatsapp--icon">
                                           </a>
 
-                                          <a href="#" class="header__social--link">
-                                                <img src="assets/images/header/mail.svg" alt="whatsapp" class="mail--icon">
-                                          </a>
+                                          <button class="header__social--link" data-fancybox="application--headerpopup"  data-src="#dialog-content">
+                                                <img src="assets/images/header/mail.svg" alt="mail" class="mail--icon">
+                                          </button>
+                                          <div class="header__popupwrapper" id="dialog-content" style="display: none; background-color: transparent; max-width: 500px; width: 100%;">
+                                                <div class="form__wrapper form-anim-background">
+                                                      <div class="form__titleblock" style="max-width: 350px;">
+                                                            <h2 class="form__title" style="color: #fff; line-height: 32px;">
+                                                                  Оставить заявку
+                                                            </h2>
+                                                            <p class="form__title--subtitle" style="color: #fff;">
+                                                                  Отправьте заявку и с вами свяжутся в ближайшее время
+                                                            </p>
+                                                      </div>
+                                                      <form action="#" name="#" class="form">
+                                                            <input type="text" name="name" class="form__input" placeholder="Ваше имя">
+                                                            <div class="form__dropdown" >
+                                                                  <input type="text" name="name" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
+                                                                  <button class="dropdown__action" type="button">
+                                                                        <img src="assets/images/create/down-array.svg" alt="array down">
+                                                                  </button>
+                                                                  <div class="menu--options n-active" style="color: #fff;">
+                                                                        <button type="button" class="menu--options__btn">
+                                                                              Позвонить!
+                                                                        </button>
+                                                                        <button type="button" class="menu--options__btn">
+                                                                              Написать в whatsapp
+                                                                        </button>
+                                                                  </div>
+                                                            </div>
+                                                            <input type="tel" name="tel" class="form__input" placeholder="Ваш номер">
+                                                            <textarea rows="10" name="comment" id="area--comment" class="form__area" placeholder="Комментарий к заявке"></textarea>
+                                                            <button class="form__action b-n-animation" type="submit" style="color: #fff;">
+                                                                  Отправить
+                                                            </button>
+                                                      </form>
+                                                      <p class="create__policy--text policy__text" style="color: #fff; padding-right: 5px;">
+                                                            *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          
                                     </div>
                               </div>
                         </div>
@@ -88,7 +134,7 @@
                                                             </p>
                                                       </div>
                                                 </div>
-                                                <button class="intro__textbox--btn" type="button" name="headerTextAction" data-aos="zoom-in" data-aos-duration="600">
+                                                <button class="intro__textbox--btn" type="button" name="headerTextAction">
                                                       Примеры
                                                 </button>
                                           </div>
@@ -270,6 +316,118 @@
                                           </h2>
                                           <div class="section__titleline"></div>
                                     </div>
+
+                                    <div class="demonstration__content">
+
+                                          <div class="demonstration__sldier owl-carousel owl-theme">
+                                                <div class="demonstration__slide">
+                                                      <img src="assets/images/demonstration/see.png" alt="see" class="demonstration__slide--img" width="100">
+                                                      <div class="demonstration__slide--textbox">
+                                                            <h3 class="demonstration__slide--title">
+                                                                  Эффект присутствия
+                                                            </h3>
+                                                            <p class="demonstration__slide--subtitle">
+                                                                  Виртуальная реальность объекта. <br>
+                                                                  Желание клиентов посетить именно Вас!
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                                <div class="demonstration__slide">
+                                                      <img src="assets/images/demonstration/invest.png" alt="invest" class="demonstration__slide--img" width="100">
+                                                      <div class="demonstration__slide--textbox">
+                                                            <h3 class="demonstration__slide--title">
+                                                                  Рост продаж
+                                                            </h3>
+                                                            <p class="demonstration__slide--subtitle">
+                                                                  У Вас становится больше клиентов. Статистика показывает, что компании у которых усть 3D тур, отметили заметное  увеличение продаж!
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                                <div class="demonstration__slide">
+                                                      <img src="assets/images/demonstration/descmobile.png" alt="desctop" class="demonstration__slide--img" width="100">
+                                                      <div class="demonstration__slide--textbox">
+                                                            <h3 class="demonstration__slide--title">
+                                                                  Просмотр с любых устройств
+                                                            </h3>
+                                                            <p class="demonstration__slide--subtitle">
+                                                                  Презентация Вашего объекта в любом месте и в любое время на все 360 градусов. Размещение 3D тура в сервисах Yandex и у Вас на сайте! Адаптация на все виды устройств
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                                <div class="demonstration__slide">
+                                                      <img src="assets/images/demonstration/web.png" alt="web" class="demonstration__slide--img" width="100">
+                                                      <div class="demonstration__slide--textbox">
+                                                            <h3 class="demonstration__slide--title">
+                                                                  Создание контента в 3D-турах
+                                                            </h3>
+                                                            <p class="demonstration__slide--subtitle">
+                                                                  Внедряем информативную инфографику, ссылки, всплывающие окна и прочее
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                                <div class="demonstration__slide">
+                                                      <img src="assets/images/demonstration/sucsess.png" alt="sucsess" class="demonstration__slide--img" width="100">
+                                                      <div class="demonstration__slide--textbox">
+                                                            <h3 class="demonstration__slide--title">
+                                                                  Вставка элементов брендинга
+                                                            </h3>
+                                                            <p class="demonstration__slide--subtitle">
+                                                                  Используйте эти возможности, чтобы укрепить узнаваемость и имидж компании
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                                <div class="demonstration__slide">
+                                                      <img src="assets/images/demonstration/param.png" alt="param" class="demonstration__slide--img" width="100">
+                                                      <div class="demonstration__slide--textbox">
+                                                            <h3 class="demonstration__slide--title">
+                                                                  Множество опций и настроек
+                                                            </h3>
+                                                            <p class="demonstration__slide--subtitle">
+                                                                  Используем различные типы навигаций, добавляем интерактивные элементы
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                                <div class="demonstration__slide">
+                                                      <img src="assets/images/demonstration/3d.png" alt="3D" class="demonstration__slide--img" width="100">
+                                                      <div class="demonstration__slide--textbox">
+                                                            <h3 class="demonstration__slide--title">
+                                                                  Высокое качество 3D-тура
+                                                            </h3>
+                                                            <p class="demonstration__slide--subtitle">
+                                                                  3D туры помогают клиентам детальнее увидеть особенности интерьера и экстерьера
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                                <div class="demonstration__slide">
+                                                      <img src="assets/images/demonstration/olimp.png" alt="olimp" class="demonstration__slide--img" width="100">
+                                                      <div class="demonstration__slide--textbox">
+                                                            <h3 class="demonstration__slide--title">
+                                                                  Преимущество среди конкурентов
+                                                            </h3>
+                                                            <p class="demonstration__slide--subtitle">
+                                                                  Позволит привлечь больше внимания к объекту недвижимости или заведению
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                                <div class="demonstration__slide">
+                                                      <img src="assets/images/demonstration/home.png" alt="home" class="demonstration__slide--img" width="100">
+                                                      <div class="demonstration__slide--textbox">
+                                                            <h3 class="demonstration__slide--title">
+                                                                  Инструмент для риэлторов
+                                                            </h3>
+                                                            <p class="demonstration__slide--subtitle">
+                                                                  Экономьте свое драгоценное время, выезжая на объекты недвижимости. Достаточно просто демонстрировать 3D тур своим клиентам
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          
+                                          
+                                      
+                                            
+                                              
+                                    </div>
+                                    
                               </div>
                         </div>
                   </section>
@@ -376,10 +534,18 @@
                                                       <form action="#" name="#" class="form create__form">
                                                             <input type="text" name="name" class="form__input create__form--input" placeholder="Ваше имя">
                                                             <div class="create__form--dropdown form__dropdown">
-                                                                  <input type="text" name="name" class="form__input create__form--input" placeholder="Позвонить?" readonly>
+                                                                  <input type="text" name="name" class="form__input create__form--input input__dropdown" placeholder="Позвонить?" readonly>
                                                                   <button class="dropdown__action" type="button">
                                                                         <img src="assets/images/create/down-array.svg" alt="array down">
                                                                   </button>
+                                                                  <div class="menu--options n-active">
+                                                                        <button type="button" class="menu--options__btn">
+                                                                              Позвонить!
+                                                                        </button>
+                                                                        <button type="button" class="menu--options__btn">
+                                                                              Написать в whatsapp
+                                                                        </button>
+                                                                  </div>
                                                             </div>
                                                             <input type="tel" name="tel" class="form__input create__form--input" placeholder="Ваш номер">
                                                             <textarea rows="10" name="comment" id="area--comment" class="form__area create__form--area" placeholder="Комментарий к заявке"></textarea>
@@ -396,7 +562,7 @@
                               </div>
                         </div>
                   </section>
-                  <section class="section section__ourclient">
+                  <section class="section section__ourclient dn">
                         <div class="container">
                               <div class="ourclient__wrapper">
                                     
@@ -717,13 +883,22 @@
                                                       +7-900-000-00-00
                                                 </a>
                                                 <div class="footer__socialblock">
-                                                      <a href="#" class="footer__socialicon">
+                                                      <a href="https://api.whatsapp.com/send/?phone=79621290909&text=Здравствуйте%2C+у+меня+есть+вопрос" class="footer__socialicon">
                                                             <img src="assets/images/footer/whatsapp.svg" alt="whatsapp" width="32">
                                                       </a>
-                                                      <a href="#" class="footer__socialicon">
+                                                      <button class="footer__socialicon" data-fancybox="application--footerpopup"  data-src="#dialog-content">
                                                             <img src="assets/images/footer/mail.svg" alt="mail" width="32">
-                                                      </a>
+                                                      </button>
                                                 </div>
+                                          </div>
+                                          <div class="footer__partner">
+                                                <h3 class="footer__partner--text">
+                                                      Партнер Яндекса
+                                                </h3>
+                                                <img src="assets/images/arrowtopartner.svg" alt="стрелка" width="100" class="arrowtopartner">
+                                                <a href="https://yandex.ru/support/maps/concept/panoramas_org.html?ysclid=m2so77qq4w371531478" target="_blank">
+                                                      <img src="assets/images/partner.png" alt="Партнер Яндекса" class="footer__partner--img" width="150">
+                                                </a>
                                           </div>
                                     </div>
                               </div>
@@ -788,7 +963,7 @@
                               </div>
                         </div>
                         <hr class="footer__line">
-                        <div class="footer__warpper">
+                        <div class="footer__warpper--bottom">
                               <div class="footer__policyblock">
                                     <p class="footer--policy">
                                           Политика конфиденциальности
@@ -807,10 +982,18 @@
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
       <script src="assets/js/aos.js"></script>
-
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="/node_modules/jquery/dist/jquery.js"></script>
+      <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+      <script src="node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
       <script src="assets/js/typed.js"></script>
       <script src="assets/js/scroll.js"></script>
       <script src="assets/js/animation.js"></script>
+      <script src="assets/js/swiper.js"></script>
+      <script src="assets/js/menuOptions.js"></script>
+      <script src="assets/js/owl.js"></script>
+      <script src="assets/js/fancyapps.js"></script>
       <script src="assets/js/main.js"></script>
+      
 </body>
 </html>

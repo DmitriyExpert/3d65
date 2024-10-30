@@ -100,6 +100,50 @@
       }
 }
 
+.questions__action-active {
+      &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 3px;
+            height: 100%;
+            background-color: $second-color;
+            border-radius: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            rotate: 45deg;
+            animation: animLineOnQ forwards .5s ease;
+      }
+}
+
+.questions__action-close {
+      &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 3px;
+            height: 100%;
+            background-color: $second-color;
+            border-radius: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            rotate: 90deg;
+            animation: animLineOnQClose forwards .5s ease;
+      }
+}
+
+@keyframes animLineOnQClose {
+      100% {
+            transform: rotate(90deg);
+      }
+}
+
+@keyframes animLineOnQ {
+      100%{
+            transform: rotate(45deg);
+      }
+}
+
 
 
 .questions__title {

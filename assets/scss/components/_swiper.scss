@@ -1,0 +1,42 @@
+.swiper {
+    max-width: 100%;
+    width: 100%;
+    color: $black-color;
+    padding: 0px 20px;
+
+    display: flex !important; 
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.swiper-slide {
+    text-align: center;
+    max-width: 310px;
+    display: flex !important;
+    flex-direction: column !important;
+    row-gap: 5px !important;
+}
+
+// Demonstration slider
+
+.demonstration__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.demonstration__slide--title {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.demonstration__slide--textbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}

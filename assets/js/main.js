@@ -8,6 +8,7 @@ for (var i = 0; i < questionBtnActions.length; i++) {
     function fun_open(event) {
       for (var i = 0; i < questionBtnActions.length; i++) {
         if (questionBtnActions[i] == event.currentTarget) {
+          
             if(questionOpenedBlocks[i].classList.contains('questions__openedblock--show')) {
                 questionOpenedBlocks[i].style.height = 0;
                 questionOpenedBlocks[i].classList.remove('questions__openedblock--show');
@@ -20,5 +21,9 @@ for (var i = 0; i < questionBtnActions.length; i++) {
   
     }
   
-  }
+}
+
+
+
+
 

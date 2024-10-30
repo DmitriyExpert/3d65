@@ -25,6 +25,14 @@
             display: flex;
       }
 
+      .header__mobile--menu {
+            max-width: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+      }
+
 
       // Intro
 
@@ -150,7 +158,19 @@
             font-size: 14px;
       }
 
+      // footer partner
       
-      
+      .footer__partner--text {
+
+            font-size: 20px;
+      }
+
+      .arrowtopartner {
+            right: 20px;
+            width: 80px;
+            rotate: -100deg;
+      }
+
+      //
 
 }

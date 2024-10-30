@@ -210,6 +210,11 @@
 
       .footer__wrapper {
             row-gap: 40px;
+            
+      }
+
+      .footer__column:nth-child(2){
+            order:-1;
       }
 
       .footer__leftwrapper {
@@ -224,6 +229,30 @@
       .container__footer--flex {
             row-gap: 20px;
       }
+
+      // footer partner
+
+      .footer__partner {
+            text-align: center;
+
+            & a {
+                  margin: 0 auto;
+            }
+      }
+
+      .arrowtopartner {
+            width: 60;
+            right: -35px;
+      }
+
+      // owl demonstration
+
+      .demonstration__slide {
+            margin: 0 auto;
+      }
+
+
+
 
 
       @media(max-width: 485px) {

@@ -157,3 +157,34 @@
       max-width: 200px;
 }
 
+
+// Partner
+
+.footer__partner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      & a {
+            max-width: 100px;
+            transition: all .3s ease;
+            &:hover {
+                  transform: scale(1.1);
+            }
+      }
+}
+
+.footer__partner--text {
+      font-size: 32px;
+      line-height: 32px;
+}
+
+.arrowtopartner {
+      position: absolute;
+      display: block;
+      right: 0;
+      transform: scale(-1, 1);
+      rotate: -90deg;
+}
+
+

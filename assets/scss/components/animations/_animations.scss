@@ -87,7 +87,7 @@
         height: 100%;
         z-index: 10000;
         background: linear-gradient(90deg, rgba(57,163,82,1) 0%, rgba(242,107,53,1) 59%);
-        left: -100%;
+        right: -100%;
         animation: heightWrapperText 1s ease forwards; 
       //   animation-delay: .5s;
       &.titles__anim--out { 
@@ -98,16 +98,50 @@
       }
     
     @keyframes heightWrapperText {
-      0% {
-        height: 0%;
-        left: 0;
-      }
-      50% {
-        height: 100%;
-        left: 0;
-      }
-      100% {
-        left: -100%;
+      100%{
+            right: 100%;
       }
     }
+}
+
+
+// Menu option
+
+.menu--optionsAnim {
+      opacity: 1;
+      right: 20px;
+      animation: menuOptionsAnim .4s linear forwards;
+}
+
+.menu--optionsAnimClose {
+      opacity: 0;
+      right: -100px;
+      animation: menuOptionsAnimClose .4s linear forwards;
+}
+
+
+@keyframes menuOptionsAnimClose {
+      0% {
+            right: 20px;
+            opacity: 1;
+      }50% {
+            right: -30px;
+            opacity: 0.5;
+      } 100% {
+            right: -100px;
+            opacity: 0;
+      }
+}
+
+@keyframes menuOptionsAnim {
+      0% {
+            right: -100px;
+            opacity: 0;
+      }50% {
+            right: -30px;
+            opacity: 0.5;
+      } 100% {
+            right: 20px;
+            opacity: 1;
+      }
 }
