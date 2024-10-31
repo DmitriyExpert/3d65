@@ -1,0 +1,69 @@
+.fixed--buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100000;
+}
+.fixed--button {
+    padding: 8px;
+    border-radius: 50px;
+    background-color: $white-color;
+    position: relative;
+    transition: all .3s ease;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &::before {
+        content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: 70px;
+      height: 70px;
+      background: $second-color;
+      border-radius: 50%;
+      animation: pulse-border 2500ms ease-out infinite;
+    }
+
+    &::after {
+        content: "";
+      position: absolute;
+      z-index: 1;
+      left: 20%;
+      top: 20%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: 80px;
+      height: 80px;
+      background: transparent;
+      border-radius: 50%;
+      transition: all 50000ms;
+    }
+    & a {
+        display: block;
+    }
+
+    
+
+
+}
+.fixed--whatsapp {
+    // background-color: transparent;
+    border: 2px solid $grey-color;
+    background-color: $grey-color;
+}
+
+.fixed--phone {
+    border: 2px solid $accent-color;
+    &::before {
+        background: $accent-color;
+    }
+}
+

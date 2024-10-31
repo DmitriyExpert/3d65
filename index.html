@@ -16,13 +16,123 @@
 </head>
 <body>
       <main class="wrapper">
+            <div class="fixed--buttons">
+                  <button type="button" class="fixed--phone fixed--button" onclick="window.location.href='tel:+79621290909'">
+                        <img src="assets/images/phone-fixed.svg" alt="Телефон" class="fixed--img" width="50">
+                        
+                  </button>
+
+                  <button type="button" class="fixed--whatsapp fixed--button" onclick="window.location.href='https://api.whatsapp.com/send/?phone=79621290909&text=Здравствуйте%2C+у+меня+есть+вопрос'">
+                        <img src="assets/images/whatsapp-fixed.svg" alt="Ватсап" class="fixed--img" width="50">
+                  </button>
+            </div>
+            <div class="policy__popup" id="policyPopup" style="display: none;">
+                  <div class="policy__popupwrapper">
+                        <h2 class="policy__title">
+                              Политика конфиденциальности  
+                        </h2>
+                        <div class="policy__subtitlesblock">
+                              <p class="policy__subtitle">
+                                    - Заполняя формы, Клиент передает следующую информацию: Имя, email, телефон, адрес. 
+                              </p>
+                              <p class="policy__subtitle">
+                                    - Информация, предоставленная Клиентом, используется только для выполнения обязательств перед Клиентом.
+                              </p>
+                        </div>
+                  </div>
+            </div>
             <header class="header" id="header">
                   <div class="container">
                         <div class="header__wrapper">
+                              <div class="header__burgermenuwrapper n-active">
+                                    <div class="header__burgermenuinner">
+                                          <button type="button" class="burgerActionClose">
+                                                
+                                          </button>
+                                          <ul class="header__burgermenu">
+                                                <li class="header__burgermenu--item">
+                                                      <a href="index.html">Главная</a>
+                                                </li>
+                                                <li class="header__burgermenu--item">
+                                                      <a href="#porfolio--section">Портфолио</a>
+                                                </li>
+                                                <li class="header__burgermenu--item">
+                                                      <a href="#footer">Контакты</a>
+                                                </li>
+                                                <li class="header__burgermenu--item">
+                                                      <a href="#demonstration--section">Ваши возможности</a>
+                                                </li>
+                                                <li class="header__burgermenu--item">
+                                                      <a href="#create--section">Как мы работаем</a>
+                                                </li>
+                                                <li class="header__burgermenu--item">
+                                                      <a href="#questions--section">FAQ</a>
+                                                </li>
+      
+                                              
+                                          </ul>
+                                          
+                                          <hr class="header__burgermenu--line">
+      
+                                          <div class="header__burgersocial">
+                                                <a href="tel:+79621290909" class="header__social--link">
+                                                      <img src="assets/images/header/phone-solid.svg" alt="phone" class="phone--icon" width="32">
+                                                </a>
+                                                <a href="https://api.whatsapp.com/send/?phone=79621290909&text=Здравствуйте%2C+у+меня+есть+вопрос" class="header__social--link">
+                                                      <img src="assets/images/header/whatsapp.svg" alt="whatsapp" class="whatsapp--icon">
+                                                </a>
+      
+                                                <button class="header__social--link" data-fancybox="application--headerpopup"  data-src="#dialog-content">
+                                                      <img src="assets/images/header/mail.svg" alt="mail" class="mail--icon">
+                                                </button>
+                                                <div class="header__popupwrapper" id="dialog-content" style="display: none; background-color: transparent; max-width: 500px; width: 100%;">
+                                                      <div class="form__wrapper form-anim-background">
+                                                            <div class="form__titleblock" style="max-width: 350px;">
+                                                                  <h2 class="form__title" style="color: #fff; line-height: 32px;">
+                                                                        Оставить заявку
+                                                                  </h2>
+                                                                  <p class="form__title--subtitle" style="color: #fff;">
+                                                                        Отправьте заявку и с вами свяжутся в ближайшее время
+                                                                  </p>
+                                                            </div>
+                                                            <form action="#" name="#" class="form">
+                                                                  <input type="text" name="name" class="form__input" placeholder="Ваше имя">
+                                                                  <div class="form__dropdown" >
+                                                                        <input type="text" name="name" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
+                                                                        <button class="dropdown__action" type="button">
+                                                                              <img src="assets/images/create/down-array.svg" alt="array down">
+                                                                        </button>
+                                                                        <div class="menu--options n-active" style="color: #fff;">
+                                                                              <button type="button" class="menu--options__btn">
+                                                                                    Позвонить!
+                                                                              </button>
+                                                                              <button type="button" class="menu--options__btn">
+                                                                                    Написать на почту!
+                                                                              </button>
+                                                                        </div>
+                                                                  </div>
+                                                                  <input type="tel" name="tel" class="form__input" placeholder="Ваш номер">
+                                                                  <textarea rows="10" name="comment" id="area--comment" class="form__area" placeholder="Комментарий к заявке"></textarea>
+                                                                  <button class="form__action b-n-animation" type="submit" style="color: #fff;">
+                                                                        Отправить
+                                                                  </button>
+                                                            </form>
+                                                            <p class="create__policy--text policy__text" style="color: #fff; padding-right: 5px;">
+                                                                  *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span data-fancybox="policy-popup" data-src="#policyPopup">политикой конфиденциальности.</span>
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                                
+                                          </div>
+                                    </div>
+                              </div>
                               <div class="header__menuwrapper" data-aos="fade-right">
                                     <a href="index.html" class="header__logo">
                                           <img src="assets/images/header/logo.svg" alt="header-logo">
                                     </a>
+
+                              
+                              
                                     <div class="header__mobile--menu">
                                           <a href="tel:+79621290909" class="header__social--link">
                                                 <img src="assets/images/header/phone-solid.svg" alt="phone" class="phone--icon" width="32">
@@ -32,6 +142,7 @@
                                                 <span></span>
                                                 <span></span>
                                           </button>
+                                         
                                     </div>
                                     <nav class="header__nav">
                                           <ul class="header__menu menu">
@@ -103,7 +214,7 @@
                                                             </button>
                                                       </form>
                                                       <p class="create__policy--text policy__text" style="color: #fff; padding-right: 5px;">
-                                                            *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
+                                                            *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span data-fancybox="policy-popup" data-src="#policyPopup">политикой конфиденциальности.</span>
                                                       </p>
                                                 </div>
                                           </div>
@@ -554,7 +665,7 @@
                                                             </button>
                                                       </form>
                                                       <p class="create__policy--text policy__text">
-                                                            *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
+                                                            *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span data-fancybox="policy-popup" data-src="#policyPopup">политикой конфиденциальности.</span>
                                                       </p>
                                                 </div>
                                           </div>
@@ -879,8 +990,8 @@
                                                 <h3 class="footer__contacttitle">
                                                       Контакты
                                                 </h3>
-                                                <a href="#" class="footer__contactnum">
-                                                      +7-900-000-00-00
+                                                <a href="tel:+79621290909" class="footer__contactnum">
+                                                      7-962-129-09-09
                                                 </a>
                                                 <div class="footer__socialblock">
                                                       <a href="https://api.whatsapp.com/send/?phone=79621290909&text=Здравствуйте%2C+у+меня+есть+вопрос" class="footer__socialicon">
@@ -993,6 +1104,7 @@
       <script src="assets/js/menuOptions.js"></script>
       <script src="assets/js/owl.js"></script>
       <script src="assets/js/fancyapps.js"></script>
+      <script src="assets/js/bergermenu.js"></script>
       <script src="assets/js/main.js"></script>
       
 </body>

@@ -3,6 +3,20 @@
 
 @media (max-width: $laptop-size) {
 
+      // fixed elements 
+
+
+      .fixed--img {
+            max-width: 40px;
+      }
+
+      .fixed--button {
+            &::before {
+                  width: 60px;
+                  height: 60px;
+            }
+      }
+
       // section
 
       //section title 

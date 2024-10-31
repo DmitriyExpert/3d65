@@ -21,3 +21,124 @@
 .header__mobile--menu {
       display: none;
 }
+
+.header__burgermenu {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      text-align: center;
+      position: relative;
+}
+
+.header__burgermenuwrapper {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      row-gap: 20px;
+      z-index: 10000;
+}
+
+.header__burgermenuinner {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      position: relative;
+      padding: 50px;
+      max-width: 300px;
+      height: 500px;
+      background-color: $black-color;
+      display: flex;
+      flex-direction: column;
+}
+
+.burgerActionClose {
+      position: relative;
+      max-width: 20px;
+      width: 100%;
+      min-height: 20px;
+      &::after {
+            position: absolute;
+            content: "";
+            height: 2px;
+            max-width: 25px;
+            width: 100%;
+            background-color: $white-color;
+            right: 0;
+            transform: rotate(-45deg);
+      }
+
+      &::before {
+            position: absolute;
+            content: "";
+            height: 2px;
+            max-width: 25px;
+            width: 100%;
+            background-color: $white-color;
+            right: 0;
+            transform: rotate(45deg);
+      }
+}
+
+.header__burgermenu--item {
+      padding: 10px;
+      font-weight: $fw-700;
+      @include gradient-text;
+      border: 2px solid $accent-color;
+      border-radius: 50px;
+}
+
+.header__burgermenu--line {
+      max-width: 100%;
+      width: 100%;
+      height: 2px;
+      background-color: $white-color;
+}
+
+.header__burgersocial {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      justify-content: center;
+}
+
+.headerBurgerAnimate {
+      opacity: 1;
+      animation: burgerMenuAnim forwards .6s linear;
+}
+
+.headerBurgerAnimateClose{
+      opacity: 0;
+      right: -100%;
+      animation: burgerMenuAnimClose forwards .6s linear;
+}
+
+@keyframes burgerMenuAnimClose {
+      0% {
+            right: 0;
+            opacity: 1;
+      } 50% {
+            right: -50%;
+            opacity: 0.5;
+      } 100% {
+            right: -100%;
+            opacity: 0;
+      }
+}
+
+
+@keyframes burgerMenuAnim {
+      0%{
+            height: 0px;
+            opacity: 0;
+      } 50%{
+            height: 300px;
+            opacity: 0.5;
+      }
+      100% {
+            opacity: 1;
+            height: 450px;
+      }
+}
+
+
+ 
