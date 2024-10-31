@@ -21,6 +21,12 @@
     border: solid 2px $white-color;
     border-radius: 50px;
     padding: 10px 0px;
+    transition: all ease .3s;
+    
+    &:hover {
+      background-color: $accent-color;
+      border-color: $accent-color;
+    }
 }
 
 .n-active {

@@ -21,6 +21,7 @@
       .section {
             padding: 50px 0px;
       }
+
       
 
       // section title 
@@ -36,7 +37,8 @@
       }
 
       .section__title {
-            font-size: 29px;
+            font-size: 24px;
+            line-height: 30px;
             position: relative;
             &::after {
                   content: "";
@@ -86,8 +88,8 @@
       }
 
       .intro__textbox--btn {
-            padding: 10px 0px;
-            max-width: 175px;
+            padding: 7px 0px;
+            max-width: 140px;
             font-size: 14px;
       }
 
@@ -101,6 +103,19 @@
 
       .viewtour__cards {
             row-gap: 30px;
+      }
+
+      .view__card--title {
+            font-size: 14px;
+      }
+
+      .view__card--subtitle {
+            font-size: 12px;
+            line-height: 22px;
+      }
+
+      .view__card  {
+            row-gap: 10px;
       }
 
       // portfolio
@@ -120,6 +135,20 @@
             padding: 10px;
       }
 
+      .portfolio__slide--title {
+            font-size: 18px;
+      }
+
+      .portfolio__slide--subtitle {
+            font-size: 12px;
+            line-height: 18px;
+      }
+
+      .slide--panaramshowbtn {
+            font-size: 12px;
+            max-width: 135px;
+            padding: 7px 0px;
+      }
 
       // form
 
@@ -127,26 +156,48 @@
             font-size: 14px;
       }
 
+      .form {
+            row-gap: 17px;
+      }
+
       .create__wrapper {
             row-gap: 0px;
       }
 
+      .form__wrapper {
+            row-gap: 17px;
+      }
+
       .form__title  {
-            font-size: 24px;
+            font-size: 20px;
+      }
+
+      .form__title--subtitle {
+            font-size: 12px;
+            line-height: 18px;
       }
 
       .form__input {
             font-size: 12px;
       }
 
+      .form__area {
+            font-size: 12px;
+      }
+
       .form__action  {
             font-size: 12px;
-            max-width: 100px;
+            max-width: 120px;
             margin: 0px auto 0px 0px;
+            padding: 9px;
       }
 
       .create__inner {
-            row-gap: 0px;
+            row-gap: 20px;
+      }
+
+      .create__card--textbox {
+            row-gap: 8px;
       }
 
       .create__formwrapper {
@@ -161,6 +212,23 @@
             line-height: 30px;
             font-size: 20px;
       }
+
+      .create__card {
+            padding-left: 70px;
+      }
+
+      .create__card--subtitle {
+            font-size: 12px;
+      }
+
+      .create__card--title {
+            font-size: 16px;
+      }
+
+      .create__countbox--innertext {
+            font-size: 15px;
+      }
+      
 
       // calltome 
 
@@ -207,7 +275,8 @@
       }
 
       .footer__btn {
-            padding: 12px 20px;
+            padding: 9px 16px;
+            font-size: 12px;
       }
 
       .footer__leftwrapper {
@@ -265,6 +334,10 @@
 
       .demonstration__slide {
             margin: 0 auto;
+      }
+
+      .demonstration__slide--subtitle {
+            font-size: 12px;
       }
 
 

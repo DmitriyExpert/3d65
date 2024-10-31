@@ -10,7 +10,6 @@
       <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
       <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
@@ -26,18 +25,32 @@
                         <img src="assets/images/whatsapp-fixed.svg" alt="Ватсап" class="fixed--img" width="50">
                   </button>
             </div>
-            <div class="policy__popup" id="policyPopup" style="display: none;">
-                  <div class="policy__popupwrapper">
-                        <h2 class="policy__title">
-                              Политика конфиденциальности  
-                        </h2>
-                        <div class="policy__subtitlesblock">
-                              <p class="policy__subtitle">
-                                    - Заполняя формы, Клиент передает следующую информацию: Имя, email, телефон, адрес. 
-                              </p>
-                              <p class="policy__subtitle">
-                                    - Информация, предоставленная Клиентом, используется только для выполнения обязательств перед Клиентом.
-                              </p>
+            <div class="policy__popupwrapper" id="policyPopup" style="display: none;">
+                  <div class="policy__popup">
+                        <div class="policy__popupwrapper">
+                              <h2 class="policy__title">
+                                    Политика конфиденциальности  
+                              </h2>
+                              <div class="policy__subtitlesblock">
+                                    <h3 class="policy__themetitle">
+                                          Предоставление информации клиентом:
+                                    </h3>
+                                    <p class="policy__subtitle">
+                                          - Заполняя формы, Клиент передает следующую информацию: Имя, email, телефон, адрес. 
+                                    </p>
+                                    <p class="policy__subtitle">
+                                          - Информация, предоставленная Клиентом, используется только для выполнения обязательств перед Клиентом.
+                                    </p>
+                              </div>
+                              <div class="policy__subtitlesblock">
+                                    <h3 class="policy__themetitle">
+                                          Предоставление информации клиентом:
+                                    </h3>
+                                    <p class="policy__subtitle">
+                                          - Мы обязуемся не разглашать полученную от Клиента информацию
+                                    </p>
+                                    
+                              </div>
                         </div>
                   </div>
             </div>
@@ -82,10 +95,10 @@
                                                       <img src="assets/images/header/whatsapp.svg" alt="whatsapp" class="whatsapp--icon">
                                                 </a>
       
-                                                <button class="header__social--link" data-fancybox="application--headerpopup"  data-src="#dialog-content">
+                                                <button class="header__social--link" data-fancybox="application--headerpopup"  data-src="#headerdialog-content">
                                                       <img src="assets/images/header/mail.svg" alt="mail" class="mail--icon">
                                                 </button>
-                                                <div class="header__popupwrapper" id="dialog-content" style="display: none; background-color: transparent; max-width: 500px; width: 100%;">
+                                                <div class="header__popupwrapper" id="headerdialog-content" style="display: none; background-color: transparent; max-width: 500px; width: 100%;">
                                                       <div class="form__wrapper form-anim-background">
                                                             <div class="form__titleblock" style="max-width: 350px;">
                                                                   <h2 class="form__title" style="color: #fff; line-height: 32px;">
@@ -97,7 +110,7 @@
                                                             </div>
                                                             <form action="#" name="#" class="form">
                                                                   <input type="text" name="name" class="form__input" placeholder="Ваше имя">
-                                                                  <div class="form__dropdown" >
+                                                                  <div class="form__dropdown">
                                                                         <input type="text" name="name" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
                                                                         <button class="dropdown__action" type="button">
                                                                               <img src="assets/images/create/down-array.svg" alt="array down">
@@ -111,14 +124,14 @@
                                                                               </button>
                                                                         </div>
                                                                   </div>
-                                                                  <input type="tel" name="tel" class="form__input" placeholder="Ваш номер">
+                                                                  <input type="tel" name="tel" class="form__input form__imput--switcher" placeholder="Ваш номер">
                                                                   <textarea rows="10" name="comment" id="area--comment" class="form__area" placeholder="Комментарий к заявке"></textarea>
                                                                   <button class="form__action b-n-animation" type="submit" style="color: #fff;">
                                                                         Отправить
                                                                   </button>
                                                             </form>
-                                                            <p class="create__policy--text policy__text" style="color: #fff; padding-right: 5px;">
-                                                                  *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span data-fancybox="policy-popup" data-src="#policyPopup">политикой конфиденциальности.</span>
+                                                            <p class="create__policy--text policy__text" style="color: #fff; padding-right: 5px;" data-fancybox="policy-popup" data-src="#policyPopup">
+                                                                  *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
                                                             </p>
                                                       </div>
                                                 </div>
@@ -178,10 +191,10 @@
                                                 <img src="assets/images/header/whatsapp.svg" alt="whatsapp" class="whatsapp--icon">
                                           </a>
 
-                                          <button class="header__social--link" data-fancybox="application--headerpopup"  data-src="#dialog-content">
+                                          <button class="header__social--link" data-fancybox="application--headerdesctoppopup"  data-src="#headerdesctopdialog-content">
                                                 <img src="assets/images/header/mail.svg" alt="mail" class="mail--icon">
                                           </button>
-                                          <div class="header__popupwrapper" id="dialog-content" style="display: none; background-color: transparent; max-width: 500px; width: 100%;">
+                                          <div class="header__popupwrapper" id="headerdesctopdialog-content" style="display: none; background-color: transparent; max-width: 500px; width: 100%;">
                                                 <div class="form__wrapper form-anim-background">
                                                       <div class="form__titleblock" style="max-width: 350px;">
                                                             <h2 class="form__title" style="color: #fff; line-height: 32px;">
@@ -203,17 +216,17 @@
                                                                               Позвонить!
                                                                         </button>
                                                                         <button type="button" class="menu--options__btn">
-                                                                              Написать в whatsapp
+                                                                              Написать на почту!
                                                                         </button>
                                                                   </div>
                                                             </div>
-                                                            <input type="tel" name="tel" class="form__input" placeholder="Ваш номер">
+                                                            <input type="tel" name="tel" class="form__input form__imput--switcher" placeholder="Ваш номер">
                                                             <textarea rows="10" name="comment" id="area--comment" class="form__area" placeholder="Комментарий к заявке"></textarea>
                                                             <button class="form__action b-n-animation" type="submit" style="color: #fff;">
                                                                   Отправить
                                                             </button>
                                                       </form>
-                                                      <p class="create__policy--text policy__text" style="color: #fff; padding-right: 5px;">
+                                                      <p class="create__policy--text policy__text" style="color: #fff; padding-right: 5px;" data-fancybox="policy-popup" data-src="#policyPopup">
                                                             *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
                                                       </p>
                                                 </div>
@@ -279,7 +292,7 @@
                                                                   Коммерческая недвижимость
                                                             </h3>
                                                             <p class="view__card--subtitle">
-                                                                  Представь свой бизнес с лучшей стороны, чтобы понравиться
+                                                                  3D тур позволит Вашему бизнесу выделиться среди конкурентов. Сделает Ваш бизнес привлекательным.
                                                             </p>
                                                       </div>
                                                 </div>
@@ -292,7 +305,7 @@
                                                                   Жилая недвижимость
                                                             </h3>
                                                             <p class="view__card--subtitle">
-                                                                  Представь свой бизнес с лучшей стороны, чтобы понравиться
+                                                                  3D тур Вашего объекта привлекает к себе больше внимания среди потенциальных покупателей. Высвобождает дополнительное время у специалистов по продажам.
                                                             </p>
                                                       </div>
                                                 </div>
@@ -305,7 +318,7 @@
                                                                   Аэросъемка
                                                             </h3>
                                                             <p class="view__card--subtitle">
-                                                                  Представь свой бизнес с лучшей стороны, чтобы понравиться
+                                                                  Аэро 3D тур, позволит целостно отразить Ваш объект, с высоты птичьего полета.
                                                             </p>
                                                       </div>
                                                 </div>
@@ -570,14 +583,14 @@
                                                             </div>
                                                             <div class="create__card--textbox">
                                                                   <h3 class="create__card--title">
-                                                                        Расчет стоимости
+                                                                        Заявка
                                                                   </h3>
                                                                   <p class="create__card--subtitle">
-                                                                        Уточнение деталей проекта, расчёт стоимости, заключение договора и оплата.
+                                                                        Вы оставляете заявку на расчет стоимости виртуального тура.
                                                                   </p>
                                                             </div>
                                                       </div>
-                                                      <div class="create__card create--cardswitcherdisplay">
+                                                      <div class="create__card">
                                                             <div class="create__countbox--wrapper">
                                                                   <div class="create__countbox">
                                                                         <p class="create__countbox--innertext">
@@ -590,7 +603,9 @@
                                                                         Расчет стоимости
                                                                   </h3>
                                                                   <p class="create__card--subtitle">
-                                                                        Уточнение деталей проекта, расчёт стоимости, заключение договора и оплата.
+                                                                        На этом этапе изучаем ваш материал, оцениваем объем работ. Если объект сложный,
+                                                                        то наш специалист выезжает на объект для уточнения деталей. После полного
+                                                                        согласования предоставляем Вам коммерческое предложение.
                                                                   </p>
                                                             </div>
                                                       </div>
@@ -604,15 +619,52 @@
                                                             </div>
                                                             <div class="create__card--textbox">
                                                                   <h3 class="create__card--title">
-                                                                        Расчет стоимости
+                                                                        Съемка
                                                                   </h3>
                                                                   <p class="create__card--subtitle">
-                                                                        Уточнение деталей проекта, расчёт стоимости, заключение договора и оплата.
+                                                                        Наш фотограф проводит съемку объекта, применяя профессиональное оборудование,
+                                                                        в удобное для вас время.
+                                                                  </p>
+                                                            </div>
+                                                      </div>
+                                                      <div class="create__card">
+                                                            <div class="create__countbox--wrapper">
+                                                                  <div class="create__countbox">
+                                                                        <p class="create__countbox--innertext">
+                                                                              4
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="create__card--textbox">
+                                                                  <h3 class="create__card--title">
+                                                                        Согласование работ
+                                                                  </h3>
+                                                                  <p class="create__card--subtitle">
+                                                                        Выполняем основную часть работ. Показываем выполненные наброски. 
+                                                                        Предоставляем Вам на согласование собранный 3D тур. 
+                                                                        Учитываем Ваши пожелания и вносим доработки.
+                                                                  </p>
+                                                            </div>
+                                                      </div>
+                                                      <div class="create__card">
+                                                            <div class="create__countbox--wrapper">
+                                                                  <div class="create__countbox">
+                                                                        <p class="create__countbox--innertext">
+                                                                              5
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="create__card--textbox">
+                                                                  <h3 class="create__card--title">
+                                                                        Передача готового проекта
+                                                                  </h3>
+                                                                  <p class="create__card--subtitle">
+                                                                        Передаем Вам в полном объеме готовый объект. Подписываем закрывающие документы. 
                                                                   </p>
                                                             </div>
                                                       </div>
                                                 </div>
-                                                <div class="create__inner jc-center create-switcherinner">
+                                                <!-- <div class="create__inner create-switcherinner">
                                                       <div class="create__card">
                                                             <div class="create__countbox--wrapper">
                                                                   <div class="create__countbox">
@@ -626,11 +678,32 @@
                                                                         Расчет стоимости
                                                                   </h3>
                                                                   <p class="create__card--subtitle">
-                                                                        Уточнение деталей проекта, расчёт стоимости, заключение договора и оплата.
+                                                                        На этом этапе изучаем ваш материал, оцениваем объем работ. Если объект сложный,
+                                                                        то наш специалист выезжает на объект для уточнения деталей. После полного
+                                                                        согласования предоставляем Вам коммерческое предложение.
                                                                   </p>
                                                             </div>
                                                       </div>
-                                                </div>
+                                                      <div class="create__card">
+                                                            <div class="create__countbox--wrapper">
+                                                                  <div class="create__countbox">
+                                                                        <p class="create__countbox--innertext" >
+                                                                              4
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="create__card--textbox" >
+                                                                  <h3 class="create__card--title">
+                                                                        Согласование работ
+                                                                  </h3>
+                                                                  <p class="create__card--subtitle">
+                                                                        Выполняем основную часть работ. Показываем выполненные наброски. 
+                                                                        Предоставляем Вам на согласование собранный 3D тур. 
+                                                                        Учитываем Ваши пожелания и вносим доработки.
+                                                                  </p>
+                                                            </div>
+                                                      </div>
+                                                </div> -->
                                           </div>
                                           <div class="create__column">
                                                 <div class="form__wrapper create__formwrapper form-anim-background">
@@ -643,7 +716,7 @@
                                                             </p>
                                                       </div>
                                                       <form action="#" name="#" class="form create__form">
-                                                            <input type="text" name="name" class="form__input create__form--input" placeholder="Ваше имя">
+                                                            <input type="text" name="name" class="form__input create__form--input" placeholder="Ваше имя" required>
                                                             <div class="create__form--dropdown form__dropdown">
                                                                   <input type="text" name="name" class="form__input create__form--input input__dropdown" placeholder="Позвонить?" readonly>
                                                                   <button class="dropdown__action" type="button">
@@ -654,18 +727,18 @@
                                                                               Позвонить!
                                                                         </button>
                                                                         <button type="button" class="menu--options__btn">
-                                                                              Написать в whatsapp
+                                                                              Написать на почту!
                                                                         </button>
                                                                   </div>
                                                             </div>
-                                                            <input type="tel" name="tel" class="form__input create__form--input" placeholder="Ваш номер">
+                                                            <input type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" name="tel" class="form__input create__form--input form__imput--switcher" placeholder="Ваш номер" required>
                                                             <textarea rows="10" name="comment" id="area--comment" class="form__area create__form--area" placeholder="Комментарий к заявке"></textarea>
                                                             <button class="form__action create__form--action b-n-animation" type="submit">
                                                                   Отправить
                                                             </button>
                                                       </form>
-                                                      <p class="create__policy--text policy__text">
-                                                            *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span data-fancybox="policy-popup" data-src="#policyPopup">политикой конфиденциальности.</span>
+                                                      <p class="create__policy--text policy__text" data-fancybox="policy-popup" data-src="#policyPopup">
+                                                            *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
                                                       </p>
                                                 </div>
                                           </div>
@@ -958,7 +1031,7 @@
                                                 <button class="form__action calltome__form--action b-n-animation" type="submit">
                                                       Отправить
                                                 </button>
-                                                <p class="calltome__policy--text policy__text">
+                                                <p class="calltome__policy--text policy__text" data-fancybox="policy-popup" data-src="#policyPopup">
                                                       *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
                                                 </p>
                                           </form>
@@ -997,9 +1070,46 @@
                                                       <a href="https://api.whatsapp.com/send/?phone=79621290909&text=Здравствуйте%2C+у+меня+есть+вопрос" class="footer__socialicon">
                                                             <img src="assets/images/footer/whatsapp.svg" alt="whatsapp" width="32">
                                                       </a>
-                                                      <button class="footer__socialicon" data-fancybox="application--footerpopup"  data-src="#dialog-content">
+                                                      <button class="footer__socialicon" data-fancybox="application--footerpopup"  data-src="#footerdialog-content">
                                                             <img src="assets/images/footer/mail.svg" alt="mail" width="32">
                                                       </button>
+                                                      <div class="header__popupwrapper" id="footerdialog-content" style="display: none; background-color: transparent; max-width: 500px; width: 100%;">
+                                                            <div class="form__wrapper form-anim-background">
+                                                                  <div class="form__titleblock" style="max-width: 350px;">
+                                                                        <h2 class="form__title" style="color: #fff; line-height: 32px;">
+                                                                              Оставить заявку
+                                                                        </h2>
+                                                                        <p class="form__title--subtitle" style="color: #fff;">
+                                                                              Отправьте заявку и с вами свяжутся в ближайшее время
+                                                                        </p>
+                                                                  </div>
+                                                                  <form action="#" name="#" class="form">
+                                                                        <input type="text" name="name" class="form__input" placeholder="Ваше имя">
+                                                                        <div class="form__dropdown" >
+                                                                              <input type="text" name="name" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
+                                                                              <button class="dropdown__action" type="button">
+                                                                                    <img src="assets/images/create/down-array.svg" alt="array down">
+                                                                              </button>
+                                                                              <div class="menu--options n-active" style="color: #fff;">
+                                                                                    <button type="button" class="menu--options__btn">
+                                                                                          Позвонить!
+                                                                                    </button>
+                                                                                    <button type="button" class="menu--options__btn">
+                                                                                          Написать на почту!
+                                                                                    </button>
+                                                                              </div>
+                                                                        </div>
+                                                                        <input type="tel" name="tel" class="form__input form__imput--switcher" placeholder="Ваш номер">
+                                                                        <textarea rows="10" name="comment" id="area--comment" class="form__area" placeholder="Комментарий к заявке"></textarea>
+                                                                        <button class="form__action b-n-animation" type="submit" style="color: #fff;">
+                                                                              Отправить
+                                                                        </button>
+                                                                  </form>
+                                                                  <p class="create__policy--text policy__text" style="color: #fff; padding-right: 5px;" data-fancybox="policy-popup" data-src="#policyPopup">
+                                                                        *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
+                                                                  </p>
+                                                            </div>
+                                                      </div>
                                                 </div>
                                           </div>
                                           <div class="footer__partner">
@@ -1065,7 +1175,7 @@
                                                 <button class="form__action footer__form--action b-n-animation" type="submit">
                                                       Отправить
                                                 </button>
-                                                <p class="footer__policy--text policy__text">
+                                                <p class="footer__policy--text policy__text" data-fancybox="policy-popup" data-src="#policyPopup">
                                                       *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
                                                 </p>
                                           </form>
@@ -1076,7 +1186,7 @@
                         <hr class="footer__line">
                         <div class="footer__warpper--bottom">
                               <div class="footer__policyblock">
-                                    <p class="footer--policy">
+                                    <p class="footer--policy" data-fancybox="policy-popup" data-src="#policyPopup">
                                           Политика конфиденциальности
                                     </p>
                                     <p class="footer--year">
@@ -1091,20 +1201,16 @@
       <script src="slick/slick.min.js"></script>
       <script src="assets/js/slick.js"></script> 
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
       <script src="assets/js/aos.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="/node_modules/jquery/dist/jquery.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js""></script>
-      <script src="assets/js/typed.js"></script>
       <script src="assets/js/scroll.js"></script>
+      <script src="assets/js/categoryType.js"></script>
       <script src="assets/js/animation.js"></script>
-      <script src="assets/js/swiper.js"></script>
       <script src="assets/js/menuOptions.js"></script>
       <script src="assets/js/owl.js"></script>
       <script src="assets/js/fancyapps.js"></script>
-      <script src="assets/js/bergermenu.js"></script>
+      <script src="assets/js/burgermenu.js"></script>
       <script src="assets/js/main.js"></script>
       
 </body>

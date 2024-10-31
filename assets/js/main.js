@@ -23,6 +23,11 @@ for (var i = 0; i < questionBtnActions.length; i++) {
   
 }
 
+// Year to footer 
+const year = document.querySelector('.footer--year');
+let currentYear = new Date().getFullYear();
+year.innerText = currentYear + 'г';
+
 
 
 

@@ -1,7 +1,5 @@
 
-.policy__popup {
-    background-color: transparent;
-}
+
 .policy__popupwrapper {
     overflow: hidden;
     padding: 20px;
@@ -23,12 +21,22 @@
 }
 
 .policy__title {
-    color: $accent-color;
+    @include gradient-text;
     font-size: 28px;
     line-height: 28px;
+}
+
+.policy__themetitle {
+      font-size: 20px;
+      line-height: 28px;
+      @include gradient-text;
 }
 
 .policy__subtitle {
     font-size: 18px;
     line-height: 24px;
+    font-weight: $fw-500;
+    & span {
+      color: $second-color;
+    }
 }

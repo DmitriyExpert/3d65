@@ -30,7 +30,7 @@
 .viewtour__cards {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      column-gap: 20px;
 }
 
 .view__card {
@@ -59,12 +59,12 @@
 .view__card--title {
       font-size: 24px;
       color: $second-color;
-      line-height: 40px;
+      line-height: 28px;
 }
 
 .view__card--subtitle{
       font-weight: $fw-600;
-      line-height: 36px;
+      line-height: 30px;
       font-size: 18px;
       color: $grey-color;
 }
