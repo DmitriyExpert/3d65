@@ -14,7 +14,7 @@ formWrapper.forEach((form) => {
                         options.classList.remove('n-active');
                         options.classList.add('menu--optionsAnim')
                         optionBtns.forEach((item) => {
-                            console.log(item)
+                            
                             item.addEventListener('click', () => {
                                     let itemValue = item.innerText;
                                     input.setAttribute('placeholder', `${itemValue}`);
