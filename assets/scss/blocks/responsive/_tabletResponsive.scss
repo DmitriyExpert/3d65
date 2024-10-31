@@ -1,5 +1,30 @@
 
 @media (max-width: $tablet-size) {
+
+      // section 
+
+      .section {
+            padding: 65px 0px;
+      }
+
+      .section__title {
+            font-size: 28px;
+            line-height: 36px;
+      }
+
+      .section__subtitle  {
+            font-size: 15px;
+      }
+
+      .viewtour__wrapper .section__titlewrapper {
+            row-gap: 7px;
+      }
+
+      .section__titlewrapper {
+            row-gap: 7px;
+      }
+
+
       // header
 
       .header__menuwrapper {
@@ -36,6 +61,10 @@
 
       // Intro
 
+      .section__intro  {
+            padding: 90px 0px;
+      }
+
       .intro__row {
             align-items: center;
 
@@ -45,15 +74,34 @@
             row-gap: 50px;
       }
 
+      .intro__textbox {
+            row-gap: 28px;
+      }
+
       .intro__title {
             font-size: 42px;
-            line-height: 48px;
+            line-height: 38px;
+            font-size: 32px;
+      }
+
+      .intro__textbox--btn {
+            padding: 10px 0px;
+            font-size: 16px;
+            max-width: 100%;
+            width: 180px;
       }
 
       .intro__subtitles {
-            row-gap: 15px;
+            row-gap: 7px;
+            line-height: 32px;
       }
 
+      // view 
+
+      .view__card--subtitle {
+            font-size: 13px;
+            line-height: 20px;
+      }
       // portfolio
 
       .portfolio__wrapper {
@@ -69,7 +117,7 @@
       }
 
       .portfolio__slide--textblock {
-            row-gap: 15px;
+            row-gap: 12px;
             padding: 20px;
       }
 
@@ -79,13 +127,13 @@
       }
 
       .portfolio__slide--title {
-            line-height: 24px;
-            font-size: 22px;
+            line-height: 20px;
+            font-size: 20px;
       }
 
       .portfolio__slide--subtitle {
-            font-size: 14px;
-            line-height: 26px;
+            font-size: 13px;
+            line-height: 20px;
       }
 
       .slide--panaramshowbtn {
@@ -97,6 +145,20 @@
       .portfolio__moreworks {
             padding: 10px;
             font-size: 14px;
+      }
+
+      // demonstration
+
+      .demonstrations__wrapper  {
+            row-gap: 50px;
+      }
+
+      .demonstration__slide--title {
+            font-size: 17px;
+      }
+
+      .demonstration__slide--subtitle {
+            font-size: 13px;
       }
 
       // create
@@ -117,6 +179,20 @@
             margin: 0 auto;
       }
 
+      .create__wrapper .section__titlewrapper .section__subtitle {
+            font-size: 20px;
+            line-height: 32px;
+      }
+
+      .create__card--title {
+            font-size: 17px;
+            line-height: 20px;
+      }
+
+      .create__card--subtitle {
+            font-size: 13px;
+      }
+
       
 
       // form 
@@ -128,7 +204,17 @@
             row-gap: 10px;
       }
       .form__title {
-            font-size: 28px;
+            font-size: 24px;
+      }
+
+      .form__input {
+            padding: 8px 14px;
+            font-size: 13px;
+      }
+
+      .form__area {
+            padding: 8px 14px;
+            font-size: 13px;
       }
 
       // questions
@@ -139,19 +225,38 @@
 
       .questions__title {
             max-width: 320px;
+            font-size: 16px;
       }
       .questions__subtitle {
             max-width: 100%;
+            font-size: 13px;
       }
 
       .questions__content {
             row-gap: 40px;
       }
 
+      .questions__itemtype  {
+            font-size: 24px;
+      }
+      .questions__itemwrapper  {
+            row-gap: 20px;
+      }
+
+
+      // calltome
+
+      .calltome__wrapper {
+            row-gap: 30px;
+      }
+
+      
+
       // footer
 
       .footer__btn {
             font-size: 14px;
+            padding: 13px 14px;
       }
 
       .footer__contacttitle  {
@@ -165,6 +270,11 @@
       .footer__menu--item {
             font-size: 14px;
       }
+      .footer__leftwrapper  {
+            row-gap: 30px;
+      }
+
+      
 
       // footer partner
       
@@ -177,6 +287,7 @@
             right: 20px;
             width: 80px;
             rotate: -100deg;
+            top: 10px;
       }
 
       //

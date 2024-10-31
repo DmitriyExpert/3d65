@@ -32,8 +32,8 @@
 
 .header__burgermenuwrapper {
       position: absolute;
-      top: 20px;
-      right: 0;
+      top: 0px;
+      right: -20px;
       row-gap: 20px;
       z-index: 10000;
 }
@@ -114,7 +114,7 @@
 
 @keyframes burgerMenuAnimClose {
       0% {
-            right: 0;
+            right: -20px;
             opacity: 1;
       } 50% {
             right: -50%;

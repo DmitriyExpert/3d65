@@ -7,6 +7,7 @@ $(document).ready(function(){
         autoplayHoverPause:true, // Не ставить на паузу при наведении
         items:3,
         margin: 50,
+        dots: false,
         responsive: {
             0: {
                   items: 1
