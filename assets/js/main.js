@@ -1,7 +1,6 @@
 // const questionBtnActions = document.querySelectorAll(".questions__action");
 // const questionOpenedBlocks = document.querySelectorAll(".questions__openedblock");
 const questionsItems = document.querySelectorAll('.questions__item');
-console.log(questionsItems)
 
 questionsItems.forEach(quest => {
       const questionBtnAction = quest.querySelector(".questions__action");

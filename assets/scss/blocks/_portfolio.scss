@@ -147,11 +147,11 @@
       
       align-items: center;
       padding: 0px 20px;
-      
 }
 
 .portfolio__slidebody {
       max-width: 526px;
+      
       margin: 0 auto;
       border-radius: 20px;
       z-index: 1;
@@ -172,6 +172,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 0;
+}
+
+.portfolio__slidebody {
+      height: 100% !important;
 }
 
 .video-play-button {
@@ -283,6 +287,7 @@
       font-size: 40px;
       font-weight: $fw-700;
       color: $accent-color;
+      line-height: 38px;
 }
 
 .portfolio__slide--subtitle {

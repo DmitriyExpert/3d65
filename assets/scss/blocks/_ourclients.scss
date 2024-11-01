@@ -1,0 +1,29 @@
+.ourclient__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    max-width: 100%;
+    width: 100%;
+    & .section__titlewrapper .section__title {
+        color: $second-color;
+    }
+}
+
+.ourclient__slider {
+    & .owl-stage-outer .owl-stage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.ourclient--img {
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.ourclient--img {
+    margin: 0 auto;
+}
