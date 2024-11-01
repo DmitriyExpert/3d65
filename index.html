@@ -1,6 +1,4 @@
-<?php
-      session_start();
-?>
+
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -125,7 +123,7 @@
                                                                   </p>
                                                             </div>
                                                             <form action="#" method="POST" name="form-type-application" class="form form-type-application" autocomplete="off">
-                                                                  <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                                                                  <input type="hidden" name="csrf_token" value="">
                                                                   <input type="text" name="name" class="form__input form__nameapplication" placeholder="Ваше имя" autocomplete="off">
                                                                   <div class="form__dropdown">
                                                                         <input type="text" name="text" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
@@ -260,7 +258,7 @@
                                                             </p>
                                                       </div>
                                                       <form action="#" method="POST" id="main__headerform" name="form-type-application" class="form form-type-application" autocomplete="off">
-                                                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                                                            <input type="hidden" name="csrf_token" value="">
                                                             <input type="text" name="name" id="mainheader__inputname" class="form__input form__nameapplication" placeholder="Ваше имя" autocomplete="off">
                                                             <div class="form__dropdown" >
                                                                   <input type="text" name="name" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
@@ -838,7 +836,7 @@
                                                             </p>
                                                       </div>
                                                       <form id="create__form" name="form-type-application" class="form form-type-application create__form" data-js-form>
-                                                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                                                            <input type="hidden" name="csrf_token" value="">
                                                             <input type="text" name="name" id="create__fieldname"  
                                                             class="form__input form__nameapplication create__form--input" placeholder="Ваше имя">
                                                       
@@ -1206,7 +1204,7 @@
                                                 </p>
                                           </div>
                                           <form action="#" method="POST" name="form-type-connection" class="form calltome__form form-type-connection">
-                                                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                                                <input type="hidden" name="csrf_token" value="">
                                                 <input type="text" name="name" class="form__input input__nameconnection calltome__form--input" placeholder="Ваше имя">
                                                 <input type="email" name="email" class="form__input input__emailconnection calltome__form--input" placeholder="Ваша почта">
                                                 <input type="tel" name="tel" class="form__input input__phoneconnection calltome__form--input" placeholder="Ваш номер">
@@ -1303,7 +1301,7 @@
                                                                         </p>
                                                                   </div>
                                                                   <form action="#" method="POST" name="form-type-application" class="form form-type-application">
-                                                                        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                                                                        <input type="hidden" name="csrf_token" value="">
                                                                         <input type="text" name="name" class="form__input form__nameapplication" placeholder="Ваше имя">
                                                                         <div class="form__dropdown" >
                                                                               <input type="text" name="name" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
@@ -1426,7 +1424,7 @@
                                                 </p>
                                           </div>
                                           <form action="#" method="POST" name="form-type-questions" class="form form-type-questions footer__form">
-                                                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                                                <input type="hidden" name="csrf_token" value="">
                                                 <input type="text" name="name" class="form__input input__namequestions footer__form--input" placeholder="Ваше имя">
                                                 <input type="email" name="email" class="form__input input__emailquestions footer__form--input" placeholder="Ваша почта">
                                                 <textarea rows="10" name="comment" class="form__area input__areaquestions footer__form--area" placeholder="Ваш вопрос?..."></textarea>
