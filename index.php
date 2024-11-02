@@ -1264,13 +1264,13 @@
                                          
                                     <div class="ourclient__content">
                                           <div class="ourclient__slider owl-carousel owl-theme owl-loaded owl-drag">
-                                                <img src="assets/images/clients/csp.jpg" alt="ЦСП" class="ourclient--img" width="150">
-                                                <img src="assets/images/clients/megadent.png" alt="Мегадент" class="ourclient--img" width="150">
-                                                <img src="assets/images/clients/pier.jpg" alt="Пьер Фошар" class="ourclient--img" width="150">
-                                                <img src="assets/images/clients/sahmash.png" alt="sahmash" class="ourclient--img" width="150">
-                                                <img src="assets/images/clients/santa.png" alt="santa" class="ourclient--img" width="150">
-                                                <img src="assets/images/clients/vostok.jpg" alt="Восток" class="ourclient--img" width="150">
-                                                <img src="assets/images/clients/winter.png" alt="Зима" class="ourclient--img" width="150">
+                                                <img src="assets/images/clients/csp.webp" alt="ЦСП" class="ourclient--img" width="150">
+                                                <img src="assets/images/clients/megadent.webp" alt="Мегадент" class="ourclient--img" width="150">
+                                                <img src="assets/images/clients/pier.webp" alt="Пьер Фошар" class="ourclient--img" width="150">
+                                                <img src="assets/images/clients/sahmash.webp" alt="sahmash" class="ourclient--img" width="150">
+                                                <img src="assets/images/clients/santa.webp" alt="santa" class="ourclient--img" width="150">
+                                                <img src="assets/images/clients/vostok.webp" alt="Восток" class="ourclient--img" width="150">
+                                                <img src="assets/images/clients/winter.webp" alt="Зима" class="ourclient--img" width="150">
                                           </div>
                                     </div>    
                                 
