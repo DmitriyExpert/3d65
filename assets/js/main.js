@@ -1,5 +1,4 @@
-// const questionBtnActions = document.querySelectorAll(".questions__action");
-// const questionOpenedBlocks = document.querySelectorAll(".questions__openedblock");
+
 const questionsItems = document.querySelectorAll('.questions__item');
 
 questionsItems.forEach(quest => {
@@ -20,33 +19,19 @@ questionsItems.forEach(quest => {
       });
 })
 
-// for (var i = 0; i < questionBtnActions.length; i++) {
-//     questionBtnActions[i].addEventListener('click', fun_open);
-  
-//     function fun_open(event) {
-//       for (var i = 0; i < questionBtnActions.length; i++) {
-//         if (questionBtnActions[i] == event.currentTarget) {
-          
-//             if(questionOpenedBlocks[i].classList.contains('questions__openedblock--show')) {
-//                 questionOpenedBlocks[i].style.height = 0;
-//                 questionOpenedBlocks[i].classList.remove('questions__openedblock--show');
-//             } else {
-//                 questionOpenedBlocks[i].classList.add('questions__openedblock--show');
-//                 questionOpenedBlocks[i].style.height = questionOpenedBlocks[i].scrollHeight + 30 + 'px';
-//             }
-//         }
-//       }
-  
-//     }
-  
-// }
+
 
 // Year to footer 
 const year = document.querySelector('.footer--year');
 let currentYear = new Date().getFullYear();
 year.innerText = currentYear + 'г';
 
+// lazy loading 
 
 
+const images = document.querySelectorAll('img');
+images.forEach((img) => {
+      img.setAttribute('loading', 'lazy');
+});
 
 
