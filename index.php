@@ -1,4 +1,6 @@
-
+<?php
+      include('php/token.php');
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -123,7 +125,7 @@
                                                                   </p>
                                                             </div>
                                                             <form action="#" method="POST" name="form-type-application" class="form form-type-application" autocomplete="off">
-                                                                  <input type="hidden" name="csrf_token" value="">
+                                                                  <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                                                                   <input type="text" name="name" class="form__input form__nameapplication" placeholder="Ваше имя" autocomplete="off">
                                                                   <div class="form__dropdown">
                                                                         <input type="text" name="text" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
@@ -258,7 +260,7 @@
                                                             </p>
                                                       </div>
                                                       <form action="#" method="POST" id="main__headerform" name="form-type-application" class="form form-type-application" autocomplete="off">
-                                                            <input type="hidden" name="csrf_token" value="">
+                                                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                                                             <input type="text" name="name" id="mainheader__inputname" class="form__input form__nameapplication" placeholder="Ваше имя" autocomplete="off">
                                                             <div class="form__dropdown" >
                                                                   <input type="text" name="name" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
@@ -836,7 +838,7 @@
                                                             </p>
                                                       </div>
                                                       <form id="create__form" name="form-type-application" class="form form-type-application create__form" data-js-form>
-                                                            <input type="hidden" name="csrf_token" value="">
+                                                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                                                             <input type="text" name="name" id="create__fieldname"  
                                                             class="form__input form__nameapplication create__form--input" placeholder="Ваше имя">
                                                       
@@ -918,7 +920,8 @@
                                           </h2>
 
                                           <div class="section__titleline"></div>
-                                    </div>      
+                                    </div>
+                                         
                                     <div class="ourclient__content">
                                           <div class="ourclient__slider owl-carousel owl-theme owl-loaded owl-drag">
                                                 <img src="assets/images/clients/csp.jpg" alt="ЦСП" class="ourclient--img" width="150">
@@ -929,7 +932,8 @@
                                                 <img src="assets/images/clients/vostok.jpg" alt="Восток" class="ourclient--img" width="150">
                                                 <img src="assets/images/clients/winter.png" alt="Зима" class="ourclient--img" width="150">
                                           </div>
-                                    </div>      
+                                    </div>    
+                                
                               </div>
                         </div>
                   </section>
@@ -1204,7 +1208,7 @@
                                                 </p>
                                           </div>
                                           <form action="#" method="POST" name="form-type-connection" class="form calltome__form form-type-connection">
-                                                <input type="hidden" name="csrf_token" value="">
+                                                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                                                 <input type="text" name="name" class="form__input input__nameconnection calltome__form--input" placeholder="Ваше имя">
                                                 <input type="email" name="email" class="form__input input__emailconnection calltome__form--input" placeholder="Ваша почта">
                                                 <input type="tel" name="tel" class="form__input input__phoneconnection calltome__form--input" placeholder="Ваш номер">
@@ -1301,7 +1305,7 @@
                                                                         </p>
                                                                   </div>
                                                                   <form action="#" method="POST" name="form-type-application" class="form form-type-application">
-                                                                        <input type="hidden" name="csrf_token" value="">
+                                                                        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                                                                         <input type="text" name="name" class="form__input form__nameapplication" placeholder="Ваше имя">
                                                                         <div class="form__dropdown" >
                                                                               <input type="text" name="name" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
@@ -1412,68 +1416,6 @@
                                                 </li>
                                           </ul>
                                     </nav>
-                              </div>
-                              <div class="footer__column">
-                                    <div class="form__wrapper footer__formwrapper form-anim-background">
-                                          <div class="footer__form--titleblock form__titleblock">
-                                                <h2 class="footer__form--title form__title">
-                                                      Задать свой вопрос
-                                                </h2>
-                                                <p class="footer__form--subtitle form__title--subtitle">
-                                                      Отправьте вопрос, ответ придет на указанную вами почту
-                                                </p>
-                                          </div>
-                                          <form action="#" method="POST" name="form-type-questions" class="form form-type-questions footer__form">
-                                                <input type="hidden" name="csrf_token" value="">
-                                                <input type="text" name="name" class="form__input input__namequestions footer__form--input" placeholder="Ваше имя">
-                                                <input type="email" name="email" class="form__input input__emailquestions footer__form--input" placeholder="Ваша почта">
-                                                <textarea rows="10" name="comment" class="form__area input__areaquestions footer__form--area" placeholder="Ваш вопрос?..."></textarea>
-                                                <button class="form__action footer__form--action b-n-animation" type="submit">
-                                                      Отправить
-                                                </button>
-                                                <p class="footer__policy--text policy__text" data-fancybox="policy-popupfootersec" data-src="#policyPopupfootersec">
-                                                      *Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span>политикой конфиденциальности.</span>
-                                                </p>
-                                                <div class="policy__popupwrapper" id="policyPopupfootersec" style="display: none;">
-                                                      <div class="policy__popup">
-                                                            <div class="policy__popupwrapper">
-                                                                  <h2 class="policy__title">
-                                                                        Политика конфиденциальности  
-                                                                  </h2>
-                                                                  <div class="policy__subtitlesblock">
-                                                                        <h3 class="policy__themetitle">
-                                                                              Предоставление информации клиентом:
-                                                                        </h3>
-                                                                        <p class="policy__subtitle">
-                                                                              - Заполняя формы, Клиент передает следующую информацию: Имя, email, телефон. 
-                                                                        </p>
-                                                                        <p class="policy__subtitle">
-                                                                              - Информация, предоставленная Клиентом, используется только для выполнения обязательств перед Клиентом.
-                                                                        </p>
-                                                                  </div>
-                                                                  <div class="policy__subtitlesblock">
-                                                                        <h3 class="policy__themetitle">
-                                                                              Разглашение полученной информации:
-                                                                        </h3>
-                                                                        <p class="policy__subtitle">
-                                                                              - Мы обязуемся не разглашать полученную от Клиента информацию.
-                                                                        </p>
-                                                                        <p class="policy__subtitle">
-                                                                              - Не считается нарушением предоставление информации агентам и третьим лицам, действующим на основании договора, для исполнения обязательств перед Клиентом.
-                                                                        </p>
-                                                                        <p class="policy__subtitle">
-                                                                              - Не считается нарушением обязательств разглашение информации в соответствии с обоснованными и применимыми требованиями закона.
-                                                                        </p>
-                                                                  </div>
-                                                                  <p style="color: red;">
-                                                                        P.S. Мы не несем ответственности за сведения, предоставленные Клиентом на Сайте в общедоступной форме.
-                                                                  </p>
-                                                            </div>
-                                                      </div>
-                                                </div>
-                                          </form>
-                                          
-                                    </div>
                               </div>
                         </div>
                         <hr class="footer__line">

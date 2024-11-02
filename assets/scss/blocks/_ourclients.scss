@@ -27,3 +27,17 @@
 .ourclient--img {
     margin: 0 auto;
 }
+
+.ourclient__line {
+      height: 2px;
+      max-width: 100%;
+      width: 100%;
+      background-color: black;
+}
+
+.owl-stage-outer {
+      border-width: 100%;
+      border-image: linear-gradient(to right, rgba(57,163,82,1) 0%, rgba(242,107,53,1) 100%) 1;
+      border-top: solid 2px;
+      border-bottom: solid 2px;
+}

@@ -55,30 +55,4 @@ formTypeConnection.forEach((app) => {
       }) 
 })
 
-formTypeQuestions.forEach((app) => {
-      const nameField = app.querySelector('.input__namequestions');
-      const emailField = app.querySelector('.input__emailquestions');
-      const areaField = app.querySelector('.input__areaquestions');
-      const actionForm = app.querySelector('.form__action');
-      
-      actionForm.addEventListener('click', async (e) => {
-            e.preventDefault();
-            const csrfToken = app.querySelector('input[name="csrf_token"]').value;
-            let data ={
-                  name: nameField.value,
-                  email: emailField.value,
-                  comment: areaField.value,
-                  csrfToken: csrfToken
-            }
-            let response = await fetch("php/mail-type-questions.php", {
-                  method: "POST",
-                  body: JSON.stringify(data),
-                  headers: {
-                  "Content-Type": "application/json; charset=UTF-8"
-                  }
-            });
-            let resilt = await response.text();
-            alert(resilt);
-      }) 
-})
 
