@@ -3,18 +3,19 @@ const formTypeConnection = document.querySelectorAll('.form-type-connection');
 const formTypeQuestions = document.querySelectorAll('.form-type-questions');
 formTypeApplication.forEach((app) => {
       const nameField = app.querySelector('.form__nameapplication');
-      const switchField = app.querySelector('.form__input--switcher');
+      const emailField = app.querySelector('.form__emailapplication');
+      const telField = app.querySelector('.form__telapplication');
       const areaField = app.querySelector('.form__areaapplication');
       const actionForm = app.querySelector('.form__action');
       
       actionForm.addEventListener('click', async (e) => {
             e.preventDefault();
             const csrfToken = app.querySelector('input[name="csrf_token"]').value;
-            console.log(csrfToken);
             let data ={
                   name: nameField.value,
-                  switch: switchField.value,
-                  comment: areaField.value,
+                  email: emailField.value,
+                  tel: telField.value,
+                  area: areaField.value,
                   csrfToken: csrfToken
             }
             let response = await fetch("php/mail.php", {

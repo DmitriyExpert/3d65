@@ -109,7 +109,7 @@
       }
 
       .portfolio__content {
-            row-gap: 40px;
+            row-gap: 20px;
       }
 
       .portfolio__slidebody {
@@ -146,6 +146,30 @@
             padding: 10px;
             font-size: 14px;
       }
+
+      .video-play-button {
+            padding: 0px;
+      }
+      .video-play-button::after {
+            width: 0px;
+            height: 0px;
+      }
+      .video-play-button {
+            background-color: transparent;
+            padding-left: 15px;
+            padding-top: 8px;
+      }
+      .video-play-button::before {
+            width: 60px;
+            height: 60px;
+      }
+      .video-play-button span {
+            border-left: 25px solid #fff;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            padding-left: 10px;
+        }
+
 
       // demonstration
 
@@ -242,6 +266,9 @@
       .questions__itemwrapper  {
             row-gap: 20px;
       }
+      .questions__wrapper {
+            row-gap: 30px;
+      }
 
 
       // calltome
@@ -296,4 +323,17 @@
             width: 200px !important;
       }
 
+      // galery
+
+      .gallary__title {
+            font-size: 30px;
+      }
+
+      .gallary--action img {
+            max-width: 70%;
+            width: 100%;
+      }
+      .portfolio__gallary--menu {
+            row-gap: 30px;
+      }
 }

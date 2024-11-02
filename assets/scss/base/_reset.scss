@@ -183,6 +183,10 @@ body {
       background: linear-gradient(90deg, rgba(57,163,82,1) 0%, rgba(242,107,53,1) 59%);
 }
 
+.n-active {
+      display: none;
+}
+
 .container {
     max-width: 1560px;
     padding: 0px 20px;

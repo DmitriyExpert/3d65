@@ -15,13 +15,15 @@ require 'phpmailer/Exception.php';
 // Получение данных
 
 $name = $data['name'];
-$switch = $data['switch'];
-$comment = $data['comment'];
+$email = $data['email'];
+$tel = $data['tel'];
+$area = $data['area'];
 
 $title = 'Заявка с сайта 3d65'; // Название письма
 $body = '<p>Имя: <strong>'.$name.'</strong></p>'.
-      '<p>Телефон или почта: <strong>'.$switch.'</strong></p>'. 
-      '<p>Комментарий к заявке: <strong>'.$comment.'</strong></p>';
+      '<p>Почта: <strong>'.$email.'</strong></p>'. 
+      '<p>Телефон: <strong>'.$tel.'</strong></p>'. 
+      '<p>Комментарий к заявке: <strong>'.$area.'</strong></p>';
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
@@ -31,16 +33,16 @@ $mail->CharSet = 'UTF-8';
 $mail->SMTPAuth   = true;
 
 // Настройки почты отправителя
-$mail->Host       = 'smtp.yandex.com'; // SMTP сервера вашей почты
-$mail->Username   = 'dpemvr@yandex.ru'; // Логин на почте
-$mail->Password   = 'ijzvrynqxqqwwwqs'; // Пароль на почте
+$mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
+$mail->Username   = 'noreply@3d65.ru'; // Логин на почте
+$mail->Password   = 'uxf3HLunE8jBePkV4AeN'; // Пароль на почте
 $mail->SMTPSecure = 'ssl';
 $mail->Port       = 465;
 
-$mail->setFrom('dpemvr@yandex.ru', 'Заявка с сайта 3d65'); // Адрес самой почты и имя отправителя
+$mail->setFrom('noreply@3d65.ru', 'Заявка с сайта 3d65'); // Адрес самой почты и имя отправителя
 
 // Получатель письма
-$mail->addAddress('dpemvr@yandex.ru');
+$mail->addAddress('info@3d65.ru');
 
 // Отправка сообщения
 $mail->isHTML(true);

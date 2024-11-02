@@ -188,7 +188,7 @@
       display: block;
       width: 32px;
       height: 44px;
-       background: $accent-color; 
+       background: transparent; 
       border-radius: 50%;
       padding: 18px 20px 18px 28px;
     }
@@ -206,6 +206,7 @@
       background: $second-color;
       border-radius: 50%;
       animation: pulse-border 1500ms ease-out infinite;
+      opacity: 0.7;
     }
     .video-play-button:after {
       content: "";
@@ -217,9 +218,10 @@
       display: block;
       width: 80px;
       height: 80px;
-      background: $second-color;
+      background: transparent;
       border-radius: 50%;
       transition: all 200ms;
+      opacity: 0.7;
     }
     
     .video-play-button:hover:after {

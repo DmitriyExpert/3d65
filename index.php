@@ -80,7 +80,7 @@
                                           </button>
                                           <ul class="header__burgermenu">
                                                 <li class="header__burgermenu--item">
-                                                      <a href="index.html">Главная</a>
+                                                      <a href="index.php">Главная</a>
                                                 </li>
                                                 <li class="header__burgermenu--item">
                                                       <a href="#porfolio--section">Портфолио</a>
@@ -127,21 +127,8 @@
                                                             <form action="#" method="POST" name="form-type-application" class="form form-type-application" autocomplete="off">
                                                                   <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                                                                   <input type="text" name="name" class="form__input form__nameapplication" placeholder="Ваше имя" autocomplete="off">
-                                                                  <div class="form__dropdown">
-                                                                        <input type="text" name="text" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
-                                                                        <button class="dropdown__action" type="button">
-                                                                              <img src="assets/images/create/down-array.svg" alt="array down">
-                                                                        </button>
-                                                                        <div class="menu--options n-active" style="color: #fff;">
-                                                                              <button type="button" class="menu--options__btn">
-                                                                                    Позвонить!
-                                                                              </button>
-                                                                              <button type="button" class="menu--options__btn">
-                                                                                    Написать на почту!
-                                                                              </button>
-                                                                        </div>
-                                                                  </div>
-                                                                  <input type="tel" name="switch" class="form__input form__input--switcher" placeholder="Ваш номер" autocomplete="off">
+                                                                  <input type="email" name="email" class="form__input form__emailapplication" placeholder="Ваша почта">
+                                                                  <input type="tel" name="tel" class="form__input form__telapplication" placeholder="Ваш номер" autocomplete="off">
                                                                   <textarea autocomplete="off" rows="10" name="comment" class="form__area form__areaapplication" placeholder="Комментарий к заявке"></textarea>
                                                                   <button class="form__action b-n-animation" type="submit" style="color: #fff;">
                                                                         Отправить
@@ -195,7 +182,7 @@
                                     </div>
                               </div>
                               <div class="header__menuwrapper" data-aos="fade-right">
-                                    <a href="index.html" class="header__logo">
+                                    <a href="index.php" class="header__logo">
                                           <img src="assets/images/header/logo.svg" alt="header-logo">
                                     </a>
 
@@ -262,21 +249,8 @@
                                                       <form action="#" method="POST" id="main__headerform" name="form-type-application" class="form form-type-application" autocomplete="off">
                                                             <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                                                             <input type="text" name="name" id="mainheader__inputname" class="form__input form__nameapplication" placeholder="Ваше имя" autocomplete="off">
-                                                            <div class="form__dropdown" >
-                                                                  <input type="text" name="name" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
-                                                                  <button class="dropdown__action" type="button">
-                                                                        <img src="assets/images/create/down-array.svg" alt="array down">
-                                                                  </button>
-                                                                  <div class="menu--options n-active" style="color: #fff;">
-                                                                        <button type="button" class="menu--options__btn">
-                                                                              Позвонить!
-                                                                        </button>
-                                                                        <button type="submit" class="menu--options__btn">
-                                                                              Написать на почту!
-                                                                        </button>
-                                                                  </div>
-                                                            </div>
-                                                            <input type="tel" name="switch" autocomplete="off" class="form__input form__input--switcher" placeholder="Ваш номер">
+                                                            <input type="email" name="email" class="form__input form__emailapplication" placeholder="Ваша почта">
+                                                            <input type="tel" name="tel" autocomplete="off" class="form__input form__telapplication" placeholder="Ваш номер">
                                                             <textarea rows="10" autocomplete="off" name="comment" class="form__area form__areaapplication" placeholder="Комментарий к заявке"></textarea>
                                                             <button class="form__action b-n-animation" type="submit" style="color: #fff;">
                                                                   Отправить
@@ -420,6 +394,385 @@
                               </div>
                         </div>
                   </section>
+                  <div class="portfolio__gallery dn" id="galery">
+                        <div class="portfolio__backgroundwrapper">
+                              <div class="portfolio__background">
+                                    
+                              </div>
+                        </div>
+                        <div class="portfolio__gallary--inner">
+                              <div class="portfolio__gallary--menu">
+                                    <button type="button" class="gallary--action">
+                                          <img src="assets/images/galery/cross.png" alt="Выход">
+                                    </button>
+                                    <div class="gallary__titlebox">
+                                          <h2 class="gallary__title">
+                                                Галерея работ
+                                          </h2>
+                                    </div>
+                                    <div class="gallary__mainmenu">
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/1-комн квартира.png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            1-комн квартира
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/Mira563k5/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                                
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Однокомнатная квартира.png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Однокомнатная квартира
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/renta65/chehova43/3d.html" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                                
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Водный комплекс Янкито (Santa Resort Hotel).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Водный комплекс "Янкито" (Santa Resort Hotel)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/santa/Yankito/3d.html" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                                
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Сауна (Santa Resort Hotel).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Сауна (Santa Resort Hotel)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/santa/Santa/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                                
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Банный комплекс (УТЦ Восток).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Банный комплекс (УТЦ Восток)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/bath/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                                
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Биллиардная (Santa Resort Hotel).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Биллиардная (Santa Resort Hotel)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/santa/billiards/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                                
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Номер Lux (Santa Resort Hotel).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Номер "Lux" (Santa Resort Hotel)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/santa/Lux_1311/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Вестибюль (Santa Resort Hotel).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Вестибюль (Santa Resort Hotel)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/santa/lobby/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Территория гостиничного комплекса Santa Resort Hotel.png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Территория гостиничного комплекса "Santa Resort Hotel"
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/santa/ter/3d.html" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Номер Double (Santa Resort Hotel).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Номер "Double" (Santa Resort Hotel)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/santa/Double1204/3d.html" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Терраса (Santa Resort Hotel).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Терраса (Santa Resort Hotel)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/santa/terrace/3d.html" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Аппартаменты «Гранд» (Белый снег).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Аппартаменты «Гранд» (Белый снег)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/ws65/grand/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Аппартаменты «Люкс» (Белый снег).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Аппартаменты «ЛЮКС» (Белый снег)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/ws65/2/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Ресторан Азия (Santa Resort Hotel).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Ресторан "Азия" (Santa Resort Hotel)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/santa/rest_asia/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Ресторан Европа (Santa Resort Hotel).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Ресторан "Европа" (Santa Resort Hotel)
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/santa/rest_europe/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/ООО Сахалин Электро Сервис.png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            ООО "Сахалин Электро Сервис"
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Съемка 3D тура для ООО "Сахалин Электро Сервис" 
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/ses/index.htm " class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/УТЦ Восток.png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            УТЦ "Восток"
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Готовый интерактивный 3D тур в Учебно-тренировочном центре "Восток" с размещением на сайте центра и Яндекс карт. 
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/vostok/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Сахалин-Машинери.png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Сахалин-Машинери
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/sm/3d.html" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Стоматологическая клиника (Пьер Фошар).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Стоматологическая клиника "Пьер Фошар"
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания 
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/foshar/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Стоматологическая клиника (Мегадент).png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Стоматологическая клиника "МЕГАДЕНТ"
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Нет описания 
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/megadent/3d.html" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Аэро 3D тур лыжной трассы.png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Аэротур 30/50 км для марафона
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            Аэро 3D тур лыжной трассы к международному марафону памяти И.П. Фархутдинова для Спортивной школы олимпийского резерва зимних видов спорта.   
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/Aero2024/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="gallary__mainmenu--item">
+                                                <div class="gallary__imgblock">
+                                                      <img class="gallary__img" src="assets/images/portfolio-card/Лыжная трасса 30-50 км для марафона.png" alt="gallary img" width="550">
+                                                </div>
+                                                <div class="gallary__textbox">
+                                                      <h3 class="gallary__itemtitle">
+                                                            Лыжная трасса 30/50 км для марафона
+                                                      </h3>
+                                                      <p class="gallary__subtitle"> 
+                                                            3D тур лыжной трассы к международному марафону памяти И.П. Фархутдинова для Спортивной школы олимпийского резерва зимних видов спорта.   
+                                                      </p>
+                                                      <a href="https://360.3d65.ru/mar2024/index.htm" class="gallary--link" target="_blank">
+                                                            Смотреть
+                                                      </a>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div> 
+                  </div>
                   <section class="section section__portfolio" id="porfolio--section">
                         <div class="container">
                               <div class="portfolio__wrapper">
@@ -586,7 +939,7 @@
                                                       </div>
                                                 </div>
                                           </div>
-                                          <button class="btn portfolio__moreworks" type="button" name="Больше работ">Больше работ</button>
+                                          <button class="btn portfolio__moreworks" id="moreworksAction" type="button" name="Больше работ">Больше работ</button>
                                           
                                     </div>
                               </div>
@@ -842,22 +1195,9 @@
                                                             <input type="text" name="name" id="create__fieldname"  
                                                             class="form__input form__nameapplication create__form--input" placeholder="Ваше имя">
                                                       
-                                                            <div class="create__form--dropdown form__dropdown">
-                                                                  <input type="text" name="name" class="form__input create__form--input input__dropdown" placeholder="Позвонить?" readonly>
-                                                                  <button class="dropdown__action" type="button">
-                                                                        <img src="assets/images/create/down-array.svg" alt="array down">
-                                                                  </button>
-                                                                  <div class="menu--options n-active">
-                                                                        <button type="button" class="menu--options__btn">
-                                                                              Позвонить!
-                                                                        </button>
-                                                                        <button type="button" class="menu--options__btn">
-                                                                              Написать на почту!
-                                                                        </button>
-                                                                  </div>
-                                                            </div>
-                                                            <input type="tel" name="switch" class="form__input
-                                                            create__form--input form__input--switcher"  id="create__fieldswitcher"
+                                                            <input type="email" name="email" class="form__input form__emailapplication" placeholder="Ваша почта">
+                                                            <input type="tel" name="tel" class="form__input
+                                                            create__form--input form__telapplication"  id="create__fieldswitcher"
                                                             placeholder="Ваш номер" 
                                                             required>
                                                             <textarea rows="10" name="comment" class="form__area form__areaapplication create__form--area" placeholder="Комментарий к заявке"></textarea>
@@ -1307,21 +1647,8 @@
                                                                   <form action="#" method="POST" name="form-type-application" class="form form-type-application">
                                                                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                                                                         <input type="text" name="name" class="form__input form__nameapplication" placeholder="Ваше имя">
-                                                                        <div class="form__dropdown" >
-                                                                              <input type="text" name="name" class="form__input input__dropdown" style="max-width: 100%; width: 100%;" placeholder="Позвонить?" readonly>
-                                                                              <button class="dropdown__action" type="button">
-                                                                                    <img src="assets/images/create/down-array.svg" alt="array down">
-                                                                              </button>
-                                                                              <div class="menu--options n-active" style="color: #fff;">
-                                                                                    <button type="button" class="menu--options__btn">
-                                                                                          Позвонить!
-                                                                                    </button>
-                                                                                    <button type="button" class="menu--options__btn">
-                                                                                          Написать на почту!
-                                                                                    </button>
-                                                                              </div>
-                                                                        </div>
-                                                                        <input type="tel" name="switch" class="form__input form__input--switcher" placeholder="Ваш номер">
+                                                                        <input type="email" name="email" class="form__input form__emailapplication" placeholder="Ваша почта">
+                                                                        <input type="tel" name="switch" class="form__input form__telapplication" placeholder="Ваш номер">
                                                                         <textarea rows="10" name="comment" class="form__area form__areaapplication" placeholder="Комментарий к заявке"></textarea>
                                                                         <button class="form__action b-n-animation" type="submit" style="color: #fff;">
                                                                               Отправить
@@ -1440,12 +1767,11 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js""></script>
       <script src="assets/js/scroll.js"></script>
-      <script src="assets/js/categoryType.js"></script>
       <script src="assets/js/animation.js"></script>
-      <script src="assets/js/menuOptions.js"></script>
       <script src="assets/js/owl.js"></script>
       <script src="assets/js/fancyapps.js"></script>
       <script src="assets/js/burgermenu.js"></script>
+      <script src="assets/js/galery.js"></script>
       <script type="module" src="assets/js/form.js"></script>
       <script src="assets/js/main.js"></script>
       
