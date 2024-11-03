@@ -19,6 +19,33 @@ $email = $data['email'];
 $tel = $data['tel'];
 $area = $data['area'];
 
+if (empty($name) || empty($email) || empty($tel)) {
+      header('HTTP/1.1 400 Bad Request');
+      echo "Ошибка: все поля обязательны для заполнения.";
+      exit;
+}
+    
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      header('HTTP/1.1 400 Bad Request');
+      echo "Ошибка: неверный формат email адреса.";
+      exit;
+}
+    
+if (preg_match("/\d/", $name)) {
+      header('HTTP/1.1 400 Bad Request');
+      echo "Ошибка: имя не должно содержать цифры.";
+      exit;
+}
+
+if (preg_match("/^\+7 $$\d{3}$$ \d{3}-\d{2}-\d{2}$/", $tel)) { 
+      header('HTTP/1.1 400 Bad Request');
+      echo "Ошибка: неверный формат номера телефона.";
+      exit;
+}
+
+
+
+
 $title = 'Заявка с сайта 3d65'; // Название письма
 $body = '<p>Имя: <strong>'.$name.'</strong></p>'.
       '<p>Почта: <strong>'.$email.'</strong></p>'. 

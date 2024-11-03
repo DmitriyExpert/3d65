@@ -1,0 +1,31 @@
+.linktoindex {
+      @include gradient-text;
+      font-weight: $fw-700;
+}
+
+.section__galery {
+      padding: 60px 0px;
+}
+
+.galery__headermenu {
+      column-gap: 20px;
+      max-width: 100px !important;
+      width: 100% !important;  
+}
+
+.portfolio__gallary--menu {
+      position: static;
+      transform: translate(0);
+      height: 100%;
+      overflow: visible;
+      padding: 0px;
+      max-width: 100%;
+      width: 100%;
+      row-gap: 35px;
+}
+
+.gallary__mainmenu {
+      justify-content: center;
+      column-gap: 30px;
+}
+

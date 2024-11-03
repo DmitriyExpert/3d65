@@ -40,6 +40,12 @@
             row-gap: 30px;
       }
 
+      .galery__headerwrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+      }
+
       .header__menuwrapper {
             max-width: 100%;
             width: 100%;
@@ -67,6 +73,10 @@
             & img {
                   width: 26px;
             }
+      }
+
+      .galery__header--link {
+            width: 40px;
       }
 
       // Intro
